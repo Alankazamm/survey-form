@@ -11,8 +11,7 @@ First challenge from 'PB AWS REACT'!
 * [Setup](#setup)
 
 ## General info
-This project is a survey-form based on the presented figma's template:
-https://www.figma.com/file/5I2a5ibNzVl3B0IyLnvKp3/survey-form---desktop-type-(Community)-(Copy)?node-id=0%3A1&t=wLYEkX7x4PX3Koqg-0
+This project is a survey-form based on the presented [figma's template](https://www.figma.com/file/5I2a5ibNzVl3B0IyLnvKp3/survey-form---desktop-type-(Community)-(Copy)?node-id=0%3A1&t=wLYEkX7x4PX3Koqg-0)
 	
 ## Technologies
 Project is created with:
