@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    /* Cores */
+    --btn-std-color: rgba(62, 178, 94, 1);
+    --btn-hv-color: rgb(255, 255, 125);
+    --input-unselected: rgba(62, 178, 94, 0.3); 
+    --input-border-active: rgba(71, 82, 66, 1);
+    --input-border-unselected: rgba(0, 0, 0, 0.25);
+
+    /* Fontes*/
+    --main-font-fml: 'Roboto', sans-serif;
+    --main-font-color: black;
+    --main-font-weight: 700;
+    --seccondary-font-color: white;
+
+    /* Radius */
+    --btn-radius: 35px;
+    --input-radius: 20px;
+    --check-box-radius:0.25em;
+}
+
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font-fml);
+}
