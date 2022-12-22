@@ -11,7 +11,7 @@
     --input-border-unselected: rgba(0, 0, 0, 0.25);
 
     /* Fonts*/
-    --main-font-fml: 'Roboto', sans-serif;
+    --main-font-fml: Roboto, sans-serif;
     --main-font-color: black;
     --main-font-weight: 700;
     --seccondary-font-color: white;
@@ -20,8 +20,6 @@
     --mob-btn-fsize: 1rem;
     --desk-form-fsize: 1.6rem;
     --mob-form-fsize: 1rem;
-
-
 
     /* Radius */
     --btn-radius: 35px;
@@ -41,10 +39,7 @@
 
 a {
     text-decoration: none;
-
 }
-
-
 
 main h1 {
     font-size: var(--desk-h-fsize);
@@ -52,9 +47,6 @@ main h1 {
 
 body {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
 }
 
 main h1,
@@ -72,10 +64,13 @@ main h2,
     justify-content: center;
     font-size: var(--mob-btn-fsize);
     border-radius: var(--btn-radius);
-    cursor:pointer;
+    cursor: pointer;
+
 
 }
-.btn:hover, .btn:active {
+
+.btn:hover,
+.btn:active {
 
     background-color: var(--btn-hv-color);
     color: var(--btn-hv-fcolor);
@@ -90,8 +85,55 @@ main h2,
 
 }
 
-
 /* Desktop */
+
+@media only screen and (min-width: 481px) {
+    body {
+        width:100vw;
+        flex-direction: row;
+        overflow:auto;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:;
+        margin-right:5rem; 
+        padding-right:80px;
+    }
+
+    main h1 {
+        /* font-size: 6.935rem; */
+        line-height: 130%;
+        margin-bottom: 1rem;
+        margin-top: 0.3rem;
+        vertical-align: top;
+
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+
+    }
+
+
+    /* Hero images */
+    .img-wrapper {
+        width: 45vw;
+    }
+    #img-hero-0 {
+        height: 87vh;
+        margin: 3.125rem 0 3rem 13.25rem;
+
+    }
+
+}
+
+
+
 
 /* input[type=submit]{
 
@@ -107,20 +149,17 @@ main h2,
 /* Mobile */
 @media only screen and (max-width: 480px) {
     body {
-        width: 100%;
+        width: 100vw;
         display: flex;
         flex-direction: column;
 
     }
 
     .img-wrapper {
-        width: 100%;
+        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
-
-
-
     }
 
     /* Hero images */
@@ -135,21 +174,20 @@ main h2,
         display: flex;
         flex-direction: column;
         justify-content: center;
-
-        width: 100%;
+        width:100vw;
         align-items: center;
     }
 
     main h1 {
         font-size: calc(var(--desk-h-fsize) / 1.86);
-       
+
         margin-bottom: 25px;
     }
 
     main h2 {
         font-size: 1.5rem;
         margin-bottom: 40px;
-        
+
     }
 
 
