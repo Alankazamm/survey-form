@@ -89,9 +89,14 @@ main h2,
 
 @media only screen and (min-width: 481px) {
     body {
+<<<<<<< Updated upstream
         width:100vw;
         flex-direction: row;
         overflow:auto;
+=======
+
+        flex-direction: row;
+>>>>>>> Stashed changes
     }
 
     main {
@@ -99,9 +104,14 @@ main h2,
         flex-direction: column;
         justify-content: center;
         align-items: center;
+<<<<<<< Updated upstream
         width:;
         margin-right:5rem; 
         padding-right:80px;
+=======
+        /* min-width: 50%;
+        margin-right:5rem; */
+>>>>>>> Stashed changes
     }
 
     main h1 {
@@ -121,9 +131,13 @@ main h2,
 
 
     /* Hero images */
+<<<<<<< Updated upstream
     .img-wrapper {
         width: 45vw;
     }
+=======
+   
+>>>>>>> Stashed changes
     #img-hero-0 {
         height: 87vh;
         margin: 3.125rem 0 3rem 13.25rem;
