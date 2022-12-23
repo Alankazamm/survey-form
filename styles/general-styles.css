@@ -179,6 +179,51 @@ input[type="radio"]:hover::before {
     transform: scale(1);
 }
 
+.wrap2 input{
+
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 16px;
+    width:16px;
+    top:0;
+    left:10px;
+    z-index: 1;   
+}
+
+.wrap2 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 10px;
+   
+    height: 14px;
+    width: 14px;
+    background-color: var(--input-unselected);
+    border-radius: 2px;
+}
+
+.wrap2:hover input ~ .checkmark{
+
+    background-color: var(--btn-std-color);
+}
+
+.wrap2 input:checked ~ .checkmark{
+    background-color: var(--btn-std-color);
+}
+
 /* Desktop */
 
 @media only screen and (min-width: 481px) {
@@ -187,7 +232,7 @@ input[type="radio"]:hover::before {
         height: 100vh;
         flex-direction: row;
         justify-content: center;
-       
+
 
     }
 
@@ -240,11 +285,11 @@ input[type="radio"]:hover::before {
     }
 
     #sv-form-main1 {
-      
+
         margin-left: 90px;
-        padding-top: 140px;
+        padding-top: 18.5vh;
         height: max-content;
-        width:max-content;
+        width: max-content;
 
 
     }
@@ -307,7 +352,7 @@ input[type="radio"]:hover::before {
         max-height: 100vh;
         min-width: max-content;
         display: block;
-       
+
     }
 
     #img-hero-0 {
@@ -338,9 +383,10 @@ input[type="radio"]:hover::before {
         display: flex;
         flex-direction: column;
         align-items: center;
-       
+
     }
-    .tri-btns-wrap .btn{
+
+    .tri-btns-wrap .btn {
         font-size: var(--desk-btn-fsize);
     }
 
@@ -384,7 +430,7 @@ input[type="radio"]:hover::before {
 /* Mobile */
 @media only screen and (max-width: 480px) {
     body {
-      height:100vh;
+        height: 100vh;
         width: 100vw;
         display: flex;
         flex-direction: column;
@@ -415,6 +461,11 @@ input[type="radio"]:hover::before {
         width: 75%;
         margin: 61px 76px 21px 44px;
 
+    }
+
+    #img-hero-3 {
+        width: 79.2%;
+        margin: 51px 45px 16px 55px;
     }
 
 
@@ -498,8 +549,21 @@ input[type="radio"]:hover::before {
         font-size: var(--mb-form-fsize);
     }
 
+    #sv-form-main2>.df-inpt-fsize {
+        font-size: 1rem;
+    }
+
     .qst-label {
         margin-bottom: 3px;
+        padding-left: 8px;
+    }
+
+    #sv-form-main2  .mult-ipt-wrap .qst-label {
+        margin-right: 124px;
+        margin-bottom: 8px;
+    }
+  .wrap2 {
+        font-size: var(--mob-form-fsize);
     }
 
     /* Buttons */
@@ -507,6 +571,7 @@ input[type="radio"]:hover::before {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-height: max-content;
 
 
     }
@@ -523,13 +588,14 @@ input[type="radio"]:hover::before {
         width: var(--mb-big-btn-width);
         height: var(--mb-btn-height);
         margin-top: 11px;
-        margin-bottom: 52px;
+        
+       
     }
 
     .btn-small {
         width: var(--mb-small-btn-width);
         height: var(--mb-btn-height);
-
+       
     }
 
     select {
