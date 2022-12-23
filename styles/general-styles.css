@@ -19,12 +19,19 @@
     --desk-btn-fsize: 1.375rem;
     --mob-btn-fsize: 1rem;
     --desk-form-fsize: 1.6rem;
-    --mob-form-fsize: 1rem;
+    --mb-form-fsize: 1rem;
 
     /* Radius */
     --btn-radius: 35px;
     --input-radius: 20px;
     --check-box-radius: 0.25em;
+
+    /* button sizes */
+    --mb-small-btn-width: 8.875rem;
+    --desk-small-btn-width: 12.4rem;
+    --mb-btn-height: 1.65rem;
+    --desk-btn-height: 2.25rem;
+
 }
 
 /* Geral */
@@ -78,6 +85,7 @@ main h2,
 }
 
 
+
 #btn-hm-pg {
     font-size: var(--desk-btn-fsize);
     width: 199px;
@@ -92,7 +100,7 @@ main h2,
         width: 100%;
         height: 100%;
         flex-direction: row;
-        justify-content:center;
+        justify-content: center;
     }
 
     main {
@@ -103,18 +111,35 @@ main h2,
         width: max-content;
         height: 100vh;
         margin-left: 100px;
-        padding-right:10px;
-        
+        padding-right: 10px;
+
 
     }
 
-    main h1 {
+    #intro-main {
+        margin-left: 4.9rem;
+        margin-right: 5.5rem;
+        padding-top: 1.8rem;
+
+    }
+
+    /* Headers */
+    #home-header {
         font-size: 6.935rem;
         line-height: 130%;
         margin-bottom: 1rem;
-        margin-top: 0.3rem;
+
         vertical-align: top;
 
+    }
+
+    #intro-header {
+        font-size: 2.44rem;
+        line-height: 117%;
+        text-align: center;
+
+        margin-bottom: 1.35rem;
+        margin-top: 0.3rem;
     }
 
     main h2 {
@@ -124,39 +149,61 @@ main h2,
 
     }
 
+    /* SubTitles */
+    #intro-sub {
+        font-size: 1.75rem;
+        line-height: 120%;
+        /* margin-left: 5rem;
+        margin-right: 4.125rem;*/
+        margin-bottom: 1.625rem;
+        text-align: center;
+    }
+
 
     /* Hero images */
     .img-wrapper {
         height: 100vh;
-        min-width:max-content;
-        display:block;
+        min-width: max-content;
+        display: block;
     }
 
     #img-hero-0 {
 
         height: 87%;
-        margin-top: 3.125rem ;
-        margin-left: 6rem; 
-        margin-bottom:/*13.25rem; */ auto;
+        margin-top: 3.125rem;
+        margin-left: 6rem;
+        margin-bottom: auto;
+
+    }
+
+    #img-hero-1 {
+        height: 63%;
+        margin: 9.15rem 0rem 5.5rem 8.375rem;
+
+    }
+
+    /* Buttons */
+    .btns-wrap-nav {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+    }
+
+    .btn-small {
+        width: var(--desk-small-btn-width);
+        height: var(--desk-btn-height);
+
+    }
+
+    .btn-small:nth-of-type(1) {
+
+        margin-right: 1.125rem;
 
     }
 
 }
 
-
-
-
-/* input[type=submit]{
-
-} */
-
-
-/* body{
-    width:100%;
-    display:flex;
-    flex-direction:row;
-    justify-items: ;
-} */
 /* Mobile */
 @media only screen and (max-width: 480px) {
     body {
@@ -180,6 +227,13 @@ main h2,
 
     }
 
+    #img-hero-1 {
+        width: 84%;
+        margin: 3.2rem 2.8rem 1.68rem 2rem;
+
+    }
+
+
 
     main {
         display: flex;
@@ -189,15 +243,55 @@ main h2,
         align-items: center;
     }
 
-    main h1 {
+    /* Headers */
+    #home-header {
         font-size: calc(var(--desk-h-fsize) / 1.86);
 
         margin-bottom: 25px;
     }
 
+    #intro-header {
+        font-size: 1.875rem;
+        line-height: 135%;
+        text-align: center;
+        margin-left: 2.875rem;
+        margin-right: 1.625rem;
+        margin-bottom: 1.25rem;
+    }
+
     main h2 {
         font-size: 1.5rem;
         margin-bottom: 40px;
+
+    }
+
+    /* SubTitles */
+    #intro-sub {
+        font-size: calc(var(--mb-form-fsize)* 1.125);
+        line-height: 121%;
+        margin-left: 5rem;
+        margin-right: 4.125rem;
+        margin-bottom: 1.25rem;
+        text-align: center;
+    }
+
+    /* Buttons */
+    .btns-wrap-nav {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .btn-small {
+        width: var(--mb-small-btn-width);
+        height: var(--mb-btn-height);
+
+    }
+
+    .btn-small:nth-of-type(1) {
+
+        margin-right: 1.125rem;
 
     }
 
