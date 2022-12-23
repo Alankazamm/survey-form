@@ -27,10 +27,15 @@
     --check-box-radius: 0.25em;
 
     /* button sizes */
+    --mb-big-btn-width: 18.875rem;
+    --desk-big-btn-width: 26.125rem;
     --mb-small-btn-width: 8.875rem;
     --desk-small-btn-width: 12.4rem;
     --mb-btn-height: 1.65rem;
     --desk-btn-height: 2.25rem;
+
+    /* inputs */
+    --mb-ipt-width: 17.375rem;
 
 }
 
@@ -44,8 +49,23 @@
     font-family: var(--main-font-fml);
 }
 
+*:focus {
+    outline: none;
+}
+
+
+
+li {
+    list-style-type: none;
+}
+
 a {
     text-decoration: none;
+}
+
+input[type='submit'] {
+    border: none;
+    padding: 0;
 }
 
 main h1 {
@@ -233,6 +253,12 @@ main h2,
 
     }
 
+    #img-hero-2 {
+        width: 75%;
+        margin: 61px 76px 21px 44px;
+
+    }
+
 
 
     main {
@@ -242,6 +268,40 @@ main h2,
         width: 100vw;
         align-items: center;
     }
+
+    .sv-form,
+    .df-form-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: flex-start;
+
+    }
+
+    .df-form-section:nth-last-of-type(1) {
+        margin-bottom: 19px;
+    }
+
+    .df-form-section {
+        padding-left: 89px;
+    }
+
+    .mult-ipt-wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+
+    }
+
+    .ipt-wrap {
+        display: flex;
+        gap: 7px;
+        flex-direction: row;
+        margin-bottom: 5px;
+    }
+
 
     /* Headers */
     #home-header {
@@ -275,12 +335,37 @@ main h2,
         text-align: center;
     }
 
+    .qst-label,
+    .df-inpt-fsize {
+        font-size: var(--mb-form-fsize);
+    }
+
+    .qst-label {
+        margin-bottom: 3px;
+    }
+
     /* Buttons */
+    .tri-btns-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
     .btns-wrap-nav {
         display: flex;
         flex-direction: row;
         width: 100vw;
         justify-content: center;
+        gap: 18px;
+    }
+
+    .btn-big {
+        width: var(--mb-big-btn-width);
+        height: var(--mb-btn-height);
+        margin-top: 11px;
+        margin-bottom: 52px;
     }
 
     .btn-small {
@@ -289,12 +374,76 @@ main h2,
 
     }
 
-    .btn-small:nth-of-type(1) {
-
-        margin-right: 1.125rem;
-
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: var(--mb-ipt-width);
+        height: 33px;
+        font-size: 16px;
+        text-overflow: ellipsis;
+        border: 1px solid var(--input-border-unselected);
+        border-radius: var(--input-radius);
+        padding: 5px 0px 5px 28px;
+        background: url(/images/select-arrow.svg) no-repeat rgba(255, 255, 255, 0.3);
+        background-size: 14px 9px;
+        background-position: left 10px center;
     }
 
+    option {
 
+        background-color: var(--btn-std-color);
+        color: var(--btn-std-fcolor);
+        
+    }
+
+    /* option:active,
+    option:hover {
+        color: var(--btn-std-fcolor);
+        background-color: var(--btn-std-color);
+    } */
+
+    select:hover,
+    select:active {
+
+        background: url(/images/select-arrow-active.svg) no-repeat rgba(255, 255, 255, 0.3);
+        background-size: 14px 9px;
+        background-position: left 10px center;
+        border: 1px solid var(--input-border-active);
+    }
+
+    input[type=radio] {
+
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: var(--input-unselected);
+        margin: 0;
+        font: inherit;
+
+        color: var(--input-unselected);
+        width: 1.15em;
+        height: 1.15em;
+        border: none;
+        border-radius: 50%;
+
+        display: grid;
+        place-content: center;
+
+        transform: translateY(-0.075em);
+    }
+
+    input[type="radio"]::before {
+        content: "";
+        width: 1.15em;
+        height:  1.15em;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        box-shadow: inset 1em 1em var(--btn-std-color);
+    }
+
+    input[type="radio"]:checked::before {
+        transform: scale(1);
+    }
 
 }
