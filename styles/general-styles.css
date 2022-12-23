@@ -246,24 +246,29 @@ input[type="radio"]:hover::before {
     }
 
     #hm-pg-main {
-        margin-left: 100px;
+        width: 45vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding-right: 10px;
+      
     }
 
     #intro-main {
-        margin-left: 4.9rem;
-        margin-right: 5.5rem;
+        /* margin-left: 4.9rem;
+        margin-right: 5.5rem; */
         padding-top: 1.8rem;
 
     }
 
     /* Headers */
     #home-header {
+        text-align: center;
         font-size: 6.935rem;
         line-height: 130%;
         margin-bottom: 1rem;
+        width: 100%;
 
-        vertical-align: top;
 
     }
 
@@ -279,7 +284,7 @@ input[type="radio"]:hover::before {
     main h2 {
         font-size: 1.5rem;
         margin-bottom: 4rem;
-        width: max-content;
+        width: 100%;
 
     }
 
@@ -348,17 +353,20 @@ input[type="radio"]:hover::before {
 
     /* Hero images */
     .img-wrapper {
-        max-height: 100vh;
-        width: 30vw;
+        height: 100vh;
+    }
 
-
+    #img-wrp-0 {
+        width: 33.6vw;
+        height: 100vh;
+        margin-right: 80px;
     }
 
     #img-hero-0 {
-
+        height: 92%;
         width: 100%;
         margin-top: 3.125rem;
-        margin-left: 2.7rem;
+        margin-left: 6rem;
         margin-bottom: auto;
 
     }
