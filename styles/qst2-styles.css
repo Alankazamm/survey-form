@@ -1,0 +1,27 @@
+@media only screen and (min-width: 481px) {
+
+    #img-hero-3 {
+        width: 100%;
+        height: 100%;
+    }
+    #img-wrp-3{
+        width: 43.475vw;
+        height: 73.3vh;
+        margin: 98px 80px 134px 87.5px;
+
+    }
+   #sv-form-main2{
+        width: 40vw;
+        height: 66vh;
+        margin-top: 24.5vh;  
+   }
+
+}
+
+@media only screen and (max-width: 480px) {
+    #img-hero-3 {
+        width: 75%;
+        margin: 61px 76px 21px 44px;
+    }
+
+}
