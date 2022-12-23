@@ -4,18 +4,22 @@
     #intro-main {
         /* margin-left: 4.9rem;
         margin-right: 5.5rem; */
-        width: 35vw;
-        height: 600px;
-        margin-top: 17vh;
-        margin-right: 6.8vw;
+        width:48vw;
+        min-height: 500px;
+        padding-top: 14vh;
+        margin-right: 4.8vw;
     }
 
     #intro-header {
-        font-size: 2.44rem;
+        font-size: 2.4rem;
         line-height: 117%;
         text-align: center;
-        height: 20%;
-        margin-bottom: 1.35rem;
+        height: 30%;
+       display:flex;
+       flex-direction:column;
+       justify-content: flex-end;
+       
+        margin-bottom: 2px;
         margin-top: 0.3rem;
     }
 
@@ -23,19 +27,22 @@
     #intro-sub {
         font-size: 1.75rem;
         line-height: 120%;
-        /* margin-left: 5rem;
-        margin-right: 4.125rem;*/
+        margin-left: 5rem;
+        margin-top:10px;
+        margin-right: 4.125rem;
         margin-bottom: 1.625rem;
         text-align: center;
+        width:34vw;
+        
 
     }
 
 
     /* imgs */
     #img-wrp-1 {
-        width: 43.6vw;
+        width: 44.6vw;
         height: 80vh;
-        margin: 19vh 6vw auto 6.7vw;
+        margin: 19vh 2vw auto 2.7vw;
     }
 
     #img-hero-1 {
@@ -69,6 +76,5 @@
         margin-bottom: 1.25rem;
         text-align: center;
     }
-
 
 }
