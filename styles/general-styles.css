@@ -75,7 +75,7 @@ main h1 {
 
 body {
     display: flex;
-    
+
 }
 
 main h1,
@@ -232,7 +232,7 @@ input[type="radio"]:hover::before {
         height: 100vh;
         flex-direction: row;
         justify-content: center;
-       
+        gap: 10px;
 
     }
 
@@ -247,22 +247,23 @@ input[type="radio"]:hover::before {
     }
 
     #hm-pg-main {
-        width: 45vw;
+        width: 460px;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-right: 10px;
-      
+        height:100vh;
+        margin-right: 20px;
+
     }
 
     #intro-main {
         /* margin-left: 4.9rem;
         margin-right: 5.5rem; */
         width: 35vw;
-        height:600px;
+        height: 600px;
         margin-top: 1.8rem;
-        margin-left:10px;
-       
+
+
 
     }
 
@@ -273,15 +274,14 @@ input[type="radio"]:hover::before {
         line-height: 130%;
         margin-bottom: 1rem;
         width: 100%;
-        height:min-content
-
+      
     }
 
     #intro-header {
         font-size: 2.44rem;
         line-height: 117%;
         text-align: center;
-        height:20%;
+        height: 20%;
         margin-bottom: 1.35rem;
         margin-top: 0.3rem;
     }
@@ -313,7 +313,7 @@ input[type="radio"]:hover::before {
         margin-right: 4.125rem;*/
         margin-bottom: 1.625rem;
         text-align: center;
-      
+
     }
 
     .sv-form,
@@ -370,6 +370,7 @@ input[type="radio"]:hover::before {
         padding-top: 3.125rem;
         margin-right: 80px;
     }
+
     #img-wrp-1 {
         width: 43.6vw;
         height: 80vh;
@@ -379,7 +380,7 @@ input[type="radio"]:hover::before {
     #img-hero-0 {
         height: 92%;
         width: 100%;
-       
+
         margin-left: 6rem;
         margin-bottom: auto;
 
@@ -388,7 +389,7 @@ input[type="radio"]:hover::before {
     #img-hero-1 {
         height: 66%;
         width: 100%;
-     
+
 
     }
 
