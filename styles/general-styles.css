@@ -179,16 +179,16 @@ input[type="radio"]:hover::before {
     transform: scale(1);
 }
 
-.wrap2 input{
+.wrap2 input {
 
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 16px;
-    width:16px;
-    top:0;
-    left:10px;
-    z-index: 1;   
+    width: 16px;
+    top: 0;
+    left: 10px;
+    z-index: 1;
 }
 
 .wrap2 {
@@ -208,19 +208,18 @@ input[type="radio"]:hover::before {
     position: absolute;
     top: 0;
     left: 10px;
-   
     height: 14px;
     width: 14px;
     background-color: var(--input-unselected);
     border-radius: 2px;
 }
 
-.wrap2:hover input ~ .checkmark{
+.wrap2:hover input~.checkmark {
 
     background-color: var(--btn-std-color);
 }
 
-.wrap2 input:checked ~ .checkmark{
+.wrap2 input:checked~.checkmark {
     background-color: var(--btn-std-color);
 }
 
@@ -287,7 +286,7 @@ input[type="radio"]:hover::before {
     #sv-form-main1 {
 
         margin-left: 90px;
-        padding-top: 18.5vh;
+        margin-top: auto;
         height: max-content;
         width: max-content;
 
@@ -350,14 +349,14 @@ input[type="radio"]:hover::before {
     /* Hero images */
     .img-wrapper {
         max-height: 100vh;
-        min-width: max-content;
-        display: block;
+        width: 30vw;
+
 
     }
 
     #img-hero-0 {
 
-        height: 87%;
+        width: 100%;
         margin-top: 3.125rem;
         margin-left: 6rem;
         margin-bottom: auto;
@@ -366,7 +365,7 @@ input[type="radio"]:hover::before {
 
     #img-hero-1 {
         height: 63%;
-        margin: 9.15rem 0rem 5.5rem 8.375rem;
+        margin: 9.15rem 0rem auto 8.375rem;
 
     }
 
@@ -558,11 +557,12 @@ input[type="radio"]:hover::before {
         padding-left: 8px;
     }
 
-    #sv-form-main2  .mult-ipt-wrap .qst-label {
+    #sv-form-main2 .mult-ipt-wrap .qst-label {
         margin-right: 124px;
         margin-bottom: 8px;
     }
-  .wrap2 {
+
+    .wrap2 {
         font-size: var(--mob-form-fsize);
     }
 
@@ -588,15 +588,17 @@ input[type="radio"]:hover::before {
         width: var(--mb-big-btn-width);
         height: var(--mb-btn-height);
         margin-top: 11px;
-        
-       
+
+
     }
 
     .btn-small {
         width: var(--mb-small-btn-width);
         height: var(--mb-btn-height);
-       
+
     }
+
+    /* select */
 
     select {
         width: var(--mb-ipt-width);
@@ -616,5 +618,15 @@ input[type="radio"]:hover::before {
         border: 1px solid var(--input-border-active);
     }
 
+    /* cehckbox */
+    .wrap2 input {
+
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        top: 0;
+        left: 10px;
+        z-index: 1;
+    }
 
 }
