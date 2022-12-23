@@ -18,7 +18,7 @@
     --desk-h-fsize: 5.5rem;
     --desk-btn-fsize: 1.375rem;
     --mob-btn-fsize: 1rem;
-    --desk-form-fsize: 1.6rem;
+    --desk-form-fsize: 1.625rem;
     --mb-form-fsize: 1rem;
 
     /* Radius */
@@ -36,6 +36,7 @@
 
     /* inputs */
     --mb-ipt-width: 17.375rem;
+    --desk-ipt-width: 28.68rem;
 
 }
 
@@ -83,6 +84,7 @@ main h2,
     font-weight: var(--main-font-weight);
 }
 
+
 .btn {
     background-color: var(--btn-std-color);
     color: var(--btn-std-fcolor);
@@ -113,14 +115,80 @@ main h2,
 
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-overflow: ellipsis;
+    border: 1px solid var(--input-border-unselected);
+    border-radius: var(--input-radius);
+
+    background: url(/images/select-arrow.svg) no-repeat rgba(255, 255, 255, 0.3);
+
+}
+
+select:hover,
+select:active {
+
+    background: url(/images/select-arrow-active.svg) no-repeat rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--input-border-active);
+}
+
+option {
+
+    background-color: var(--btn-std-color);
+    color: var(--btn-std-fcolor);
+
+}
+
+input[type=radio] {
+
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--input-unselected);
+    margin: 0;
+    font: inherit;
+
+    color: var(--input-unselected);
+    width: 1.15em;
+    height: 1.15em;
+    border: none;
+    border-radius: 50%;
+
+    display: grid;
+    place-content: center;
+
+    transform: translateY(-0.075em);
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 1.15em;
+    height: 1.15em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--btn-std-color);
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="radio"]:hover::before {
+    transform: scale(1);
+}
+
 /* Desktop */
 
 @media only screen and (min-width: 481px) {
     body {
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         flex-direction: row;
         justify-content: center;
+       
+
     }
 
     main {
@@ -129,11 +197,13 @@ main h2,
         justify-content: center;
         align-items: center;
         width: max-content;
-        height: 100vh;
+        height: 100%;
+
+    }
+
+    #hm-pg-main {
         margin-left: 100px;
         padding-right: 10px;
-
-
     }
 
     #intro-main {
@@ -169,6 +239,16 @@ main h2,
 
     }
 
+    #sv-form-main1 {
+      
+        margin-left: 90px;
+        padding-top: 140px;
+        height: max-content;
+        width:max-content;
+
+
+    }
+
     /* SubTitles */
     #intro-sub {
         font-size: 1.75rem;
@@ -179,12 +259,55 @@ main h2,
         text-align: center;
     }
 
+    .sv-form,
+    .df-form-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: max-content;
+        align-items: flex-start;
+        font-size: var(--desk-form-fsize);
+
+    }
+
+    /* .df-form-section:nth-last-of-type(1) {
+        margin-bottom: 19px;
+    } */
+
+    /* .df-form-section {} */
+
+    .mult-ipt-wrap {
+
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .ipt-wrap {
+        display: flex;
+        gap: 11px;
+        flex-direction: row;
+        margin-bottom: 17px;
+    }
+
+    .qst-label,
+    .df-inpt-fsize {
+        font-size: var(--desk-form-fsize);
+    }
+
+    .qst-label {
+        margin-bottom: 17px;
+        line-height: 30.47px;
+
+    }
+
 
     /* Hero images */
     .img-wrapper {
-        height: 100vh;
+        max-height: 100vh;
         min-width: max-content;
         display: block;
+       
     }
 
     #img-hero-0 {
@@ -202,31 +325,66 @@ main h2,
 
     }
 
+    #img-hero-2 {
+        height: 69%;
+        margin: 98px 0px auto 87.5px;
+
+    }
+
     /* Buttons */
+
+    .tri-btns-wrap {
+        margin-top: 19px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .tri-btns-wrap .btn{
+        font-size: var(--desk-btn-fsize);
+    }
+
     .btns-wrap-nav {
         display: flex;
         flex-direction: row;
-
         justify-content: center;
+        gap: 18px;
     }
 
     .btn-small {
         width: var(--desk-small-btn-width);
         height: var(--desk-btn-height);
-
     }
 
-    .btn-small:nth-of-type(1) {
-
-        margin-right: 1.125rem;
-
+    .btn-big {
+        width: var(--desk-big-btn-width);
+        height: var(--desk-btn-height);
+        margin-top: 11px;
+        margin-bottom: 52px;
     }
 
+    select {
+        width: var(--desk-ipt-width);
+        height: 52px;
+        font-size: 27px;
+        background-size: 22px 14px;
+        background-position: left 10px center;
+        padding: 5px 0px 5px 35px;
+        margin-bottom: 46px;
+    }
+
+    select:hover,
+    select:active {
+
+        background-size: 22px 14px;
+        background-position: left 10px center;
+    }
 }
 
 /* Mobile */
 @media only screen and (max-width: 480px) {
     body {
+      height:100vh;
         width: 100vw;
         display: flex;
         flex-direction: column;
@@ -375,75 +533,22 @@ main h2,
     }
 
     select {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
         width: var(--mb-ipt-width);
         height: 33px;
         font-size: 16px;
-        text-overflow: ellipsis;
-        border: 1px solid var(--input-border-unselected);
-        border-radius: var(--input-radius);
-        padding: 5px 0px 5px 28px;
-        background: url(/images/select-arrow.svg) no-repeat rgba(255, 255, 255, 0.3);
         background-size: 14px 9px;
         background-position: left 10px center;
+        padding: 5px 0px 5px 28px;
     }
-
-    option {
-
-        background-color: var(--btn-std-color);
-        color: var(--btn-std-fcolor);
-        
-    }
-
-    /* option:active,
-    option:hover {
-        color: var(--btn-std-fcolor);
-        background-color: var(--btn-std-color);
-    } */
 
     select:hover,
     select:active {
 
-        background: url(/images/select-arrow-active.svg) no-repeat rgba(255, 255, 255, 0.3);
+
         background-size: 14px 9px;
         background-position: left 10px center;
         border: 1px solid var(--input-border-active);
     }
 
-    input[type=radio] {
-
-        -webkit-appearance: none;
-        appearance: none;
-        background-color: var(--input-unselected);
-        margin: 0;
-        font: inherit;
-
-        color: var(--input-unselected);
-        width: 1.15em;
-        height: 1.15em;
-        border: none;
-        border-radius: 50%;
-
-        display: grid;
-        place-content: center;
-
-        transform: translateY(-0.075em);
-    }
-
-    input[type="radio"]::before {
-        content: "";
-        width: 1.15em;
-        height:  1.15em;
-        border-radius: 50%;
-        transform: scale(0);
-        transition: 120ms transform ease-in-out;
-        box-shadow: inset 1em 1em var(--btn-std-color);
-    }
-
-    input[type="radio"]:checked::before {
-        transform: scale(1);
-    }
 
 }
