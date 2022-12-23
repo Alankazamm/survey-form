@@ -1,0 +1,69 @@
+@media only screen and (min-width: 481px) {
+    #hm-pg-main {
+        width: 460px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin-right: 20px;
+
+    }
+
+    /* Headers */
+    #home-header {
+        text-align: center;
+        font-size: 6.935rem;
+        line-height: 130%;
+        margin-bottom: 1rem;
+        width: 100%;
+
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    #img-wrp-0 {
+        width: 33.6vw;
+        height: 100vh;
+        padding-top: 3.125rem;
+        margin-right: 80px;
+    }
+
+
+    #img-hero-0 {
+        height: 92%;
+        width: 100%;
+
+        margin-left: 6rem;
+        margin-bottom: auto;
+
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    #img-hero-0 {
+        width: 56.5%;
+        margin: 3.5rem 9rem 1.55rem 3.7rem;
+
+    }
+    #home-header {
+        font-size: calc(var(--desk-h-fsize) / 1.86);
+
+        margin-bottom: 25px;
+    }
+
+
+
+    main h2 {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+
+    }
+
+
+}

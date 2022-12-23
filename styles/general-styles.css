@@ -37,7 +37,6 @@
     /* inputs */
     --mb-ipt-width: 17.375rem;
     --desk-ipt-width: 28.68rem;
-
 }
 
 /* Geral */
@@ -53,8 +52,6 @@
 *:focus {
     outline: none;
 }
-
-
 
 li {
     list-style-type: none;
@@ -75,7 +72,6 @@ main h1 {
 
 body {
     display: flex;
-
 }
 
 main h1,
@@ -84,7 +80,6 @@ main h2,
 .btn {
     font-weight: var(--main-font-weight);
 }
-
 
 .btn {
     background-color: var(--btn-std-color);
@@ -95,16 +90,12 @@ main h2,
     font-size: var(--mob-btn-fsize);
     border-radius: var(--btn-radius);
     cursor: pointer;
-
-
 }
 
 .btn:hover,
 .btn:active {
-
     background-color: var(--btn-hv-color);
     color: var(--btn-hv-fcolor);
-
 }
 
 
@@ -113,7 +104,6 @@ main h2,
     font-size: var(--desk-btn-fsize);
     width: 199px;
     height: 36px;
-
 }
 
 select {
@@ -123,23 +113,18 @@ select {
     text-overflow: ellipsis;
     border: 1px solid var(--input-border-unselected);
     border-radius: var(--input-radius);
-
     background: url(/images/select-arrow.svg) no-repeat rgba(255, 255, 255, 0.3);
-
 }
 
 select:hover,
 select:active {
-
     background: url(/images/select-arrow-active.svg) no-repeat rgba(255, 255, 255, 0.3);
     border: 1px solid var(--input-border-active);
 }
 
 option {
-
     background-color: var(--btn-std-color);
     color: var(--btn-std-fcolor);
-
 }
 
 input[type=radio] {
@@ -149,16 +134,13 @@ input[type=radio] {
     background-color: var(--input-unselected);
     margin: 0;
     font: inherit;
-
     color: var(--input-unselected);
     width: 1.15em;
     height: 1.15em;
     border: none;
     border-radius: 50%;
-
     display: grid;
     place-content: center;
-
     transform: translateY(-0.075em);
 }
 
@@ -216,7 +198,6 @@ input[type="radio"]:hover::before {
 }
 
 .wrap2:hover input~.checkmark {
-
     background-color: var(--btn-std-color);
 }
 
@@ -233,7 +214,6 @@ input[type="radio"]:hover::before {
         flex-direction: row;
         justify-content: center;
         gap: 10px;
-
     }
 
     main {
@@ -243,56 +223,6 @@ input[type="radio"]:hover::before {
         align-items: center;
         width: max-content;
         height: 100%;
-
-    }
-
-    #hm-pg-main {
-        width: 460px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height:100vh;
-        margin-right: 20px;
-
-    }
-
-    #intro-main {
-        /* margin-left: 4.9rem;
-        margin-right: 5.5rem; */
-        width: 35vw;
-        height: 600px;
-        margin-top: 1.8rem;
-
-
-
-    }
-
-    /* Headers */
-    #home-header {
-        text-align: center;
-        font-size: 6.935rem;
-        line-height: 130%;
-        margin-bottom: 1rem;
-        width: 100%;
-      
-    }
-
-    #intro-header {
-        font-size: 2.44rem;
-        line-height: 117%;
-        text-align: center;
-        height: 20%;
-        margin-bottom: 1.35rem;
-        margin-top: 0.3rem;
-    }
-
-    main h2 {
-        font-size: 1.5rem;
-        margin-bottom: 4rem;
-        width: 100%;
-        text-align: center;
-
-
     }
 
     #sv-form-main1 {
@@ -301,19 +231,6 @@ input[type="radio"]:hover::before {
         margin-top: auto;
         height: max-content;
         width: max-content;
-
-
-    }
-
-    /* SubTitles */
-    #intro-sub {
-        font-size: 1.75rem;
-        line-height: 120%;
-        /* margin-left: 5rem;
-        margin-right: 4.125rem;*/
-        margin-bottom: 1.625rem;
-        text-align: center;
-
     }
 
     .sv-form,
@@ -324,14 +241,7 @@ input[type="radio"]:hover::before {
         width: max-content;
         align-items: flex-start;
         font-size: var(--desk-form-fsize);
-
     }
-
-    /* .df-form-section:nth-last-of-type(1) {
-        margin-bottom: 19px;
-    } */
-
-    /* .df-form-section {} */
 
     .mult-ipt-wrap {
 
@@ -355,48 +265,16 @@ input[type="radio"]:hover::before {
     .qst-label {
         margin-bottom: 17px;
         line-height: 30.47px;
-
     }
-
 
     /* Hero images */
     .img-wrapper {
         height: 100vh;
     }
 
-    #img-wrp-0 {
-        width: 33.6vw;
-        height: 100vh;
-        padding-top: 3.125rem;
-        margin-right: 80px;
-    }
-
-    #img-wrp-1 {
-        width: 43.6vw;
-        height: 80vh;
-        margin: 19vh 7.2vw auto 6.7vw;
-    }
-
-    #img-hero-0 {
-        height: 92%;
-        width: 100%;
-
-        margin-left: 6rem;
-        margin-bottom: auto;
-
-    }
-
-    #img-hero-1 {
-        height: 66%;
-        width: 100%;
-
-
-    }
-
     #img-hero-2 {
         height: 69%;
         margin: 98px 0px auto 87.5px;
-
     }
 
     /* Buttons */
@@ -406,7 +284,6 @@ input[type="radio"]:hover::before {
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
     .tri-btns-wrap .btn {
@@ -457,7 +334,6 @@ input[type="radio"]:hover::before {
         width: 100vw;
         display: flex;
         flex-direction: column;
-
     }
 
     .img-wrapper {
@@ -467,31 +343,15 @@ input[type="radio"]:hover::before {
         align-items: center;
     }
 
-    /* Hero images */
-    #img-hero-0 {
-        width: 56.5%;
-        margin: 3.5rem 9rem 1.55rem 3.7rem;
-
-    }
-
-    #img-hero-1 {
-        width: 84%;
-        margin: 3.2rem 2.8rem 1.68rem 2rem;
-
-    }
-
     #img-hero-2 {
         width: 75%;
         margin: 61px 76px 21px 44px;
-
     }
 
     #img-hero-3 {
         width: 79.2%;
         margin: 51px 45px 16px 55px;
     }
-
-
 
     main {
         display: flex;
@@ -508,7 +368,6 @@ input[type="radio"]:hover::before {
         justify-content: center;
         width: 100%;
         align-items: flex-start;
-
     }
 
     .df-form-section:nth-last-of-type(1) {
@@ -524,7 +383,6 @@ input[type="radio"]:hover::before {
         display: flex;
         flex-direction: column;
         align-items: baseline;
-
     }
 
     .ipt-wrap {
@@ -532,39 +390,6 @@ input[type="radio"]:hover::before {
         gap: 7px;
         flex-direction: row;
         margin-bottom: 5px;
-    }
-
-
-    /* Headers */
-    #home-header {
-        font-size: calc(var(--desk-h-fsize) / 1.86);
-
-        margin-bottom: 25px;
-    }
-
-    #intro-header {
-        font-size: 1.875rem;
-        line-height: 135%;
-        text-align: center;
-        margin-left: 2.875rem;
-        margin-right: 1.625rem;
-        margin-bottom: 1.25rem;
-    }
-
-    main h2 {
-        font-size: 1.5rem;
-        margin-bottom: 40px;
-
-    }
-
-    /* SubTitles */
-    #intro-sub {
-        font-size: calc(var(--mb-form-fsize)* 1.125);
-        line-height: 121%;
-        margin-left: 5rem;
-        margin-right: 4.125rem;
-        margin-bottom: 1.25rem;
-        text-align: center;
     }
 
     .qst-label,
@@ -596,8 +421,6 @@ input[type="radio"]:hover::before {
         flex-direction: column;
         align-items: center;
         max-height: max-content;
-
-
     }
 
     .btns-wrap-nav {
@@ -612,17 +435,12 @@ input[type="radio"]:hover::before {
         width: var(--mb-big-btn-width);
         height: var(--mb-btn-height);
         margin-top: 11px;
-
-
     }
 
     .btn-small {
         width: var(--mb-small-btn-width);
         height: var(--mb-btn-height);
-
     }
-
-    /* select */
 
     select {
         width: var(--mb-ipt-width);
@@ -635,8 +453,6 @@ input[type="radio"]:hover::before {
 
     select:hover,
     select:active {
-
-
         background-size: 14px 9px;
         background-position: left 10px center;
         border: 1px solid var(--input-border-active);
@@ -644,7 +460,6 @@ input[type="radio"]:hover::before {
 
     /* cehckbox */
     .wrap2 input {
-
         position: absolute;
         height: 16px;
         width: 16px;
