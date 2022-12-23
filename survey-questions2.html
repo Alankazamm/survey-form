@@ -6,13 +6,14 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
     <link rel="stylesheet" type="text/css" href="./styles/general-styles.css">
     <link rel="stylesheet" type="text/css" href="./styles/sv-form-styles.css">
+    <link rel="stylesheet" type="text/css" href="./styles/qst2-styles.css">
     <script src="./scripts/app.js" defer></script>
     <title>survey form</title>
 </head>
 
 <body>
 
-    <div class="img-wrapper">
+    <div class="img-wrapper" id="img-wrp-3">
         <img src="./images/three.svg" id="img-hero-3" alt="surprised boy in formal wear" />
     </div>
     <main id="sv-form-main2">
@@ -29,18 +30,26 @@
                 <div class="mult-ipt-wrap">
                     <h3 class="qst-label">What resources have you used or are you using for your training?</h3>
                 </div>
-                <div class="ipt-wrap wrap2"><input type="checkbox" id="sv-cbx-bks" name="sv-cbx-ivst" value="books">Books
-                    and articles</input><span class="checkmark"></span></div>
-                <div class="ipt-wrap wrap2"><input type="checkbox" id="sv-cbx-ytb" name="sv-cbx-ivst" value="ytb">YouTube
-                    tutorial
-                    videos</input><span class="checkmark"></span></div>
-                <div class="ipt-wrap wrap2"><input type="checkbox" id="sv-cbx-on" name="sv-cbx-ivst" value="online">online
-                    or face to face
-                    courses
-                    </input><span class="checkmark"></span></div>
-                <div class="ipt-wrap wrap2"><input type="checkbox" id="sv-cbx-exp" name="sv-cbx-ivst" value="exp">experience
-                    with little
-                    investment</input><span class="checkmark"></span></div>
+                <div class="ipt-wrap wrap2">
+                    <label for="sv-cbx-bks">Books and articles</label>
+                    <input type="checkbox" id="sv-cbx-bks" name="sv-cbx-ivst" value="books"/>
+                    <span class="checkmark"></span>
+                </div>
+                <div class="ipt-wrap wrap2">
+                    <label for="sv-cbx-ytb">YouTube tutorial videos</label>
+                    <input type="checkbox" id="sv-cbx-ytb" name="sv-cbx-ivst" value="ytb"/>
+                    <span class="checkmark"></span>
+                </div>
+                <div class="ipt-wrap wrap2">
+                    <label for="sv-cbx-on">online or face to face courses</label>
+                    <input type="checkbox" id="sv-cbx-on" name="sv-cbx-ivst" value="online"/>
+                    <span class="checkmark"></span>
+                </div>
+                <div class="ipt-wrap wrap2">
+                    <label for="sv-cbx-exp">experience with little investment</label>
+                    <input type="checkbox" id="sv-cbx-exp" name="sv-cbx-ivst" value="exp"/>
+                    <span class="checkmark"></span>
+                </div>
             </section>
             <nav class="tri-btns-wrap">
                 <div class="btns-wrap-nav">
