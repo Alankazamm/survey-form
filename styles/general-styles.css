@@ -159,7 +159,7 @@ main h2,
         width: var(--desk-big-btn-width);
         height: var(--desk-btn-height);
         margin-top: 11px;
-        margin-bottom: 52px;
+        /* margin-bottom: 52px; */
     }
     .btn:hover{
         background-color: var(--btn-hv-color);

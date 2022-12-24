@@ -4,25 +4,27 @@
         width: 100%;
         height: 100%;
     }
-    #img-wrp-2{
+
+    #img-wrp-2 {
         width: 43.475vw;
         height: 73.3vh;
         margin: 98px 80px 134px 87.5px;
 
     }
-   #sv-form-main1{
-        width: 40vw;
-        height: 66vh;
-        margin-top: 24.5vh;  
-        margin-right:5vw; 
-   }
+
+    #sv-form-main1 {
+        width: 42vw;
+        height:max-content;
+        margin-top: 18vh;
+        margin-right: 3vw;
+    }
 
 }
 
 @media only screen and (max-width: 480px) {
     #img-hero-2 {
         width: 75%;
-        margin:8vh 76px 21px 44px;
+        margin: 8vh 76px 21px 44px;
     }
 
 }
