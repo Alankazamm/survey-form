@@ -13,7 +13,8 @@
    #sv-form-main2{
         width: 40vw;
         height: 66vh;
-        margin-top: 24.5vh;  
+        margin-top: 24.5vh; 
+        margin-right: 5vw; 
    }
 
 }

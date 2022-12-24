@@ -128,8 +128,6 @@ input[type="radio"]:hover::before {
         align-items: center;
     }
 
-
-
     .df-form-section {
         width: 100%;
         display: flex;
@@ -303,5 +301,9 @@ input[type="radio"]:hover::before {
         width: 26px;
     }
 
-    .bg-txtarea {}
+    .bg-txtarea {
+        height: 29.3vh;
+        width: 36vw;
+        margin-bottom: 8vh;
+    }
 }
