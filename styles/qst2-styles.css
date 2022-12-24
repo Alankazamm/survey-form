@@ -19,9 +19,12 @@
 }
 
 @media only screen and (max-width: 480px) {
-    #img-hero-3 {
+    /* #img-hero-3 {
         width: 75%;
         margin: 61px 76px 21px 44px;
+    } */
+    #img-hero-3 {
+        width: 79.2%;
+        margin: 51px 45px 16px 55px;
     }
-
 }

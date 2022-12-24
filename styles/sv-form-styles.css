@@ -88,9 +88,7 @@ input[type="radio"]:hover::before {
 
 }
 
-label{
-    -webkit-tap-highlight-color: transparent;
-}
+
 
 .wrap2 input:checked~.checkmark {
     background-color: var(--btn-std-color);
@@ -101,6 +99,18 @@ label{
 }
 
 
+.bg-txtarea {
+    border: 1px solid var(--input-border-unselected);
+    border-radius: 20px;
+    resize: none;
+    padding: 12px 20px;
+}
+
+.bg-txtarea:active, .bg-txtarea:hover{
+
+    border-color:var(--input-border-selected) ;
+}
+
 @media only screen and (max-width: 480px) {
     .sv-form {
         display: flex;
@@ -109,6 +119,15 @@ label{
         width: 100vw;
         align-items: center;
     }
+
+    .sv-form-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        align-items: center;
+    }
+
 
 
     .df-form-section {
@@ -169,18 +188,9 @@ label{
 
     }
 
-    /* #sv-form-main2 .mult-ipt-wrap .qst-label {
-        margin-right: 124px;
-        margin-bottom: 8px;
-    } */
-    /* #sv-select-status-wrap {
-        width: 100%;
-        display: flex;
-        align-items: center;
-    } */
     .df-form-section3 {
-        display:flex;
-        flex-direction:column;
+        display: flex;
+        flex-direction: column;
     }
 
     .wrap2 {
@@ -213,6 +223,12 @@ label{
         left: 10px;
         height: 14px;
         width: 14px;
+    }
+
+    .bg-txtarea {
+        height: 18vh;
+        width: 58vw;
+        margin-bottom: 26px;
     }
 
 }
@@ -286,4 +302,6 @@ label{
         height: 26px;
         width: 26px;
     }
+
+    .bg-txtarea {}
 }
