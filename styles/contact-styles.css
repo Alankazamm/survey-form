@@ -1,0 +1,157 @@
+::placeholder {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.ipts:hover,
+.ipts:active {
+    border-color: var(--input-border-active);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media only screen and (min-width: 481px) {
+    .contact-form-main {
+        padding-top: 15vh;
+    }
+
+    #img-hero-5 {
+        width: 100%;
+        height: fit-content;
+        margin: 105px 94px 134px 87.5px;
+    }
+
+    #img-wrp-5 {
+        width: 57.2vw;
+        height: 100vh;
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .text-inputs-wrp {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 50vw;
+    }
+
+    .txt-ipt-label {
+        font-size: var(--desk-form-fsize);
+        font-weight: var(--main-font-weight);
+        margin-left: 10px;
+        margin-bottom: 4px;
+    }
+
+    .txt-ipt-label:first-child {
+        margin-bottom: 22px;
+
+    }
+
+    .txt-inpts {
+        width: 36vw;
+        margin-bottom: 24px;
+
+    }
+
+    .txt-inpts:first-child {
+        margin-bottom: 27px;
+
+    }
+
+    .nbr-inpt {
+        width: 12vw;
+        margin-bottom: 24px;
+    }
+
+    #age {
+        padding-left: 18px;
+    }
+
+    .ipts {
+        height: 52px;
+        border-radius: var(--input-radius);
+        border: 1px solid var(--input-border-unselected);
+        padding-left: 17px;
+        line-height: 18.75px;
+        display: block;
+        padding-bottom: 5px;
+        font-size: 27px;
+    }
+
+    #contact-frm-btns {
+        display: flex;
+        justify-content: center;
+    }
+
+    #contact-frm-btns .btn:first-child {
+        margin-bottom: 3px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    #img-hero-5 {
+        width: 75%;
+        margin: 47px 40px 18px 65px;
+    }
+
+    .text-inputs-wrp {
+        display: flex;
+        flex-direction: column;
+        min-width: 80vw;
+        margin-left: auto;
+        align-items: flex-start;
+
+    }
+
+    .txt-ipt-label {
+        font-size: var(--mb-form-fsize);
+        font-weight: var(--main-font-weight);
+        margin-left: 2vw;
+        margin-bottom: 4px;
+    }
+
+    .txt-ipt-label:first-child {
+        margin-bottom: 7px;
+
+    }
+
+    .txt-inpts {
+        width: 58vw;
+        margin-bottom: 10px;
+    }
+
+    .txt-inpts:first-child {
+        margin-bottom: 14px;
+    }
+
+    .nbr-inpt {
+        width: 23vw;
+        margin-bottom: 34px;
+    }
+
+    #age {
+        padding-left: 15px;
+    }
+
+    .ipts {
+        height: 33px;
+        border-radius: var(--input-radius);
+        border: 1px solid var(--input-border-unselected);
+        padding-left: 11px;
+        line-height: 18.75px;
+        display: block;
+        padding-bottom: 5px;
+
+
+    }
+
+
+}
