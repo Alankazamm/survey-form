@@ -64,7 +64,7 @@ input[type="radio"]:hover::before {
 
 .wrap2 label {
     padding-left: 20px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .wrap2 {
@@ -87,20 +87,19 @@ input[type="radio"]:hover::before {
     border-radius: 2px;
 }
 
-.wrap2:hover input~.checkmark {
-    background-color: var(--btn-std-color);
-}
+
 
 .wrap2 input:checked~.checkmark {
     background-color: var(--btn-std-color);
 }
-.wrap2 input:not(:checked){
+
+.wrap2 input:not(:checked) {
     background-color: var(--input-unselected);
 }
 
 
 @media only screen and (max-width: 480px) {
-    .sv-form{
+    .sv-form {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -108,42 +107,45 @@ input[type="radio"]:hover::before {
         align-items: center;
     }
 
-  
+
     .df-form-section {
-        width:100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items:center;
-       /* padding-left:20vw; */
-        
+        align-items: center;
+        /* padding-left:20vw; */
+
     }
+
     .df-form-section2 {
-        width:100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items:center;
-        margin-right:5%; 
+        align-items: center;
+        margin-right: 5%;
     }
-    .df-form-section2 > .qst-label {
+
+    .df-form-section2>.qst-label {
         margin-right: 10%;
 
     }
+
     .df-form-section:nth-last-of-type(1) {
         margin-bottom: 19px;
     }
 
     .mult-ipt-wrap {
-        width:50%;
+        width: 50%;
         display: flex;
         flex-direction: column;
-        align-items:flex-start;
-        margin-right:5%; 
-        margin-top:10px;
-        
+        align-items: flex-start;
+        margin-right: 5%;
+        margin-top: 10px;
+
     }
 
     .ipt-wrap {
-        width:100%;
+        width: 100%;
         display: flex;
         gap: 7px;
         flex-direction: row;
@@ -161,18 +163,19 @@ input[type="radio"]:hover::before {
 
     .qst-label {
         margin-bottom: 3px;
-       
+
     }
 
     /* #sv-form-main2 .mult-ipt-wrap .qst-label {
         margin-right: 124px;
         margin-bottom: 8px;
     } */
-    #sv-select-status-wrap{
-        width:100%;
+    #sv-select-status-wrap {
+        width: 100%;
         display: flex;
-        align-items:center;
+        align-items: center;
     }
+
     .wrap2 {
         font-size: var(--mob-form-fsize);
     }
@@ -259,6 +262,10 @@ input[type="radio"]:hover::before {
 
         background-size: 22px 14px;
         background-position: left 10px center;
+    }
+
+    .wrap2:hover input~.checkmark {
+        background-color: var(--btn-std-color);
     }
 
     .checkmark {

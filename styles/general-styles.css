@@ -92,10 +92,7 @@ main h2,
     cursor: pointer;
 }
 
-.btn:hover{
-    background-color: var(--btn-hv-color);
-    color: var(--btn-hv-fcolor);
-}
+
 
 #btn-hm-pg {
     font-size: var(--desk-btn-fsize);
@@ -106,6 +103,7 @@ main h2,
 /* Desktop */
 
 @media only screen and (min-width: 481px) {
+    
     body {
         width: 100vw;
         height: 100vh;
@@ -159,6 +157,10 @@ main h2,
         margin-top: 11px;
         margin-bottom: 52px;
     }
+    .btn:hover{
+        background-color: var(--btn-hv-color);
+        color: var(--btn-hv-fcolor);
+    }
 
 }
 
@@ -169,7 +171,7 @@ main h2,
         width: 100vw;
         display: flex;
         flex-direction: column;
-        overflow:auto;
+        overflow:auto   ;
     }
 
     .img-wrapper {
