@@ -83,8 +83,6 @@ input[type="radio"]:hover::before {
 .checkmark {
     position: absolute;
     top: 0;
-
-
     background-color: var(--input-unselected);
     border-radius: 2px;
 }
@@ -99,33 +97,42 @@ input[type="radio"]:hover::before {
 
 
 @media only screen and (max-width: 480px) {
-
-
-    .sv-form,
-    .df-form-section {
+    .sv-form{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
-        align-items: flex-start;
+        width: 100vw;
+        align-items: center;
     }
 
+  
+    .df-form-section {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .df-form-section2 {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        padding-right:10%; 
+    }
     .df-form-section:nth-last-of-type(1) {
         margin-bottom: 19px;
-    }
-
-    .df-form-section {
-        padding-left: 89px;
     }
 
     .mult-ipt-wrap {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: baseline;
+        align-items:center;
+        
     }
 
     .ipt-wrap {
+        width:100%;
         display: flex;
         gap: 7px;
         flex-direction: row;
@@ -143,14 +150,18 @@ input[type="radio"]:hover::before {
 
     .qst-label {
         margin-bottom: 3px;
-        padding-left: 8px;
+       
     }
 
-    #sv-form-main2 .mult-ipt-wrap .qst-label {
+    /* #sv-form-main2 .mult-ipt-wrap .qst-label {
         margin-right: 124px;
         margin-bottom: 8px;
+    } */
+    #sv-select-status-wrap{
+        width:100%;
+        display: flex;
+        align-items:center;
     }
-
     .wrap2 {
         font-size: var(--mob-form-fsize);
     }
