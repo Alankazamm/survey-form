@@ -47,6 +47,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--main-font-fml);
+    -webkit-tap-highlight-color: transparent;
 }
 
 *:focus {
@@ -92,7 +93,10 @@ main h2,
     cursor: pointer;
 }
 
-
+.btn:active{
+    background-color: var(--btn-hv-color);
+    color: var(--btn-hv-fcolor);
+}
 
 #btn-hm-pg {
     font-size: var(--desk-btn-fsize);
