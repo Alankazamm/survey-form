@@ -94,6 +94,9 @@ input[type="radio"]:hover::before {
 .wrap2 input:checked~.checkmark {
     background-color: var(--btn-std-color);
 }
+.wrap2 input:not(:checked){
+    background-color: var(--input-unselected);
+}
 
 
 @media only screen and (max-width: 480px) {
@@ -107,27 +110,35 @@ input[type="radio"]:hover::before {
 
   
     .df-form-section {
-        
+        width:100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items:center;
+       /* padding-left:20vw; */
+        
     }
     .df-form-section2 {
         width:100%;
         display: flex;
         flex-direction: column;
         align-items:center;
-        padding-right:10%; 
+        margin-right:5%; 
+    }
+    .df-form-section2 > .qst-label {
+        margin-right: 10%;
+
     }
     .df-form-section:nth-last-of-type(1) {
         margin-bottom: 19px;
     }
 
     .mult-ipt-wrap {
-        width: 100%;
+        width:50%;
         display: flex;
         flex-direction: column;
-        align-items:center;
+        align-items:flex-start;
+        margin-right:5%; 
+        margin-top:10px;
         
     }
 
@@ -190,8 +201,8 @@ input[type="radio"]:hover::before {
 
     .wrap2 input {
         left: 10px;
-        height: 16px;
-        width: 16px;
+        height: 14px;
+        width: 14px;
     }
 
 }

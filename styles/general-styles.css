@@ -92,8 +92,7 @@ main h2,
     cursor: pointer;
 }
 
-.btn:hover,
-.btn:active {
+.btn:hover{
     background-color: var(--btn-hv-color);
     color: var(--btn-hv-fcolor);
 }
@@ -170,7 +169,7 @@ main h2,
         width: 100vw;
         display: flex;
         flex-direction: column;
-        overflow:hidden;
+        overflow:auto;
     }
 
     .img-wrapper {
