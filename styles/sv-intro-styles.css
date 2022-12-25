@@ -4,7 +4,7 @@
     #intro-main {
         /* margin-left: 4.9rem;
         margin-right: 5.5rem; */
-        width:36.9vw;
+        width: 36.9vw;
         min-height: 500px;
         padding-top: 14vh;
         margin-right: 4.8vw;
@@ -41,15 +41,16 @@
 
     /* imgs */
     #img-wrp-1 {
-        width: 43.12vw;
-        height: fit-content;
+        width: 37.8vw;
+        height: 70vh;
+        margin: 19.2vh 70px 17.5vh 2.7vw;
     }
 
 
     #img-hero-1 {
-        height: fit-content;
+        height: 100%;
         width: 100%;
-        margin: 18vh 2vw auto 2.7vw;
+
     }
 }
 
