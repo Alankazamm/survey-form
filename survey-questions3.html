@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/general-styles.css">
     <link rel="stylesheet" type="text/css" href="./styles/sv-form-styles.css">
     <link rel="stylesheet" type="text/css" href="./styles/qst3-styles.css">
-    <script src="./scripts/app.js" defer></script>
+    <script src="./scripts/sv-quest3-app.js" defer></script>
     <title>survey form</title>
 </head>
 
@@ -25,7 +25,7 @@
                 <nav class="tri-btns-wrap">
                     <div class="btns-wrap-nav">
                         <a class="btn btn-small" onclick="history.go(-1)">Back</a>
-                        <input type="submit" class="btn btn-small" value="Next"></input>
+                        <input type="submit" onclick="return checaMarcado()" class="btn btn-small" value="Next"></input>
                     </div>
                     <input type="submit" class="btn btn-big" value="Skip"></input>
                 </nav>
