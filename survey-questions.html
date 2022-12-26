@@ -44,7 +44,7 @@
             <nav class="tri-btns-wrap">
                 <div class="btns-wrap-nav">
                     <a class="btn btn-small" onclick="history.go(-1)">Back</a>
-                    <input type="submit" class="btn btn-small" onclick="return checaMarcado(document.querySelector(`select[name='sv-select-status']`),document.querySelector(`input[name='sv-radio-mrkt']`))" value="Next"></input>
+                    <input type="submit" class="btn btn-small" onclick="return checaMarcado(document.querySelector(`select[name='sv-select-status']`),document.querySelectorAll(`input[name='sv-radio-mrkt']`))" value="Next"></input>
                 </div>
                 <input type="submit" class="btn btn-big" value="Skip"></input>
             </nav>
