@@ -317,6 +317,6 @@ input[type="radio"]:hover::before {
     .bg-txtarea {
         height: 29.3vh;
         width: 36vw;
-        margin-bottom: 8vh;
+        margin-bottom: 6vh;
     }
 }

@@ -2,7 +2,7 @@
     #qst2-body{
         display:flex;
         align-items:center;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     #img-hero-3 {
         width: 100%;

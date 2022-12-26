@@ -136,7 +136,7 @@ main h2,
         margin-top: 2.5vh;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .tri-btns-wrap .btn {
