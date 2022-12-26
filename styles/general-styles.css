@@ -133,7 +133,7 @@ main h2,
     /* Buttons */
 
     .tri-btns-wrap {
-        margin-top: 19px;
+        margin-top: 2.5vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -148,6 +148,7 @@ main h2,
         flex-direction: row;
         justify-content: center;
         gap: 18px;
+        flex-wrap: wrap;
     }
 
     .btn-small {
@@ -209,6 +210,7 @@ main h2,
         width: 100vw;
         justify-content: center;
         gap: 18px;
+        
     }
 
     .btn-big {

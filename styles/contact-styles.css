@@ -16,21 +16,21 @@ input::-webkit-inner-spin-button {
 @media only screen and (min-width: 481px) {
     .contact-form-main {
         padding-top: 15vh;
+        height:fit-content;
+        width:41vw;
     }
 
     #img-hero-5 {
         width: 100%;
-        height: fit-content;
-        margin: 105px 94px 134px 87.5px;
+        height: 100%;
+        
     }
 
     #img-wrp-5 {
-        width: 57.2vw;
-        height: 100vh;
-      
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 43.125vw;
+        height: 68.5vh;
+        margin: 13.8vh 7.2vw 134px 11vw;
+
     }
 
 
@@ -39,7 +39,7 @@ input::-webkit-inner-spin-button {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        width: 50vw;
+        width: 100%;
     }
 
     .txt-ipt-label {
