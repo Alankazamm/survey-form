@@ -31,5 +31,12 @@
         width: 75%;
         margin: 8vh 76px 21px 44px;
     }
+    
+    #qst1-body {
+      
+        padding: 0;
+        margin:0;
+       
+    }
 
 }

@@ -134,29 +134,29 @@ input[type="radio"]:hover::before {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        white-space:nowrap ;
+        white-space: nowrap;
         /* padding-left:20vw; */
 
     }
+   
 
     .df-form-section2 {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        width: 100vw;
-        align-items: center;
+        width: 100%;
+        justify-content: flex-start;
     }
 
     .df-form-section2 .qst-label {
-      white-space: normal;
-
+        white-space: normal;
+        width: 100%;
     }
 
     .df-form-section:nth-last-of-type(1) {
-        margin-bottom: 19px;
+        margin-bottom: 4px;
     }
 
-    .mult-ipt-wrap {
+    /* .mult-ipt-wrap {
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -164,7 +164,7 @@ input[type="radio"]:hover::before {
         margin-right: 5%;
         margin-top: 10px;
 
-    }
+    } */
 
     .ipt-wrap {
         width: 100%;
@@ -195,7 +195,12 @@ input[type="radio"]:hover::before {
     }
 
     .wrap2 {
+        padding-left:20px;
         font-size: var(--mob-form-fsize);
+    }
+    .wrap2 label {
+        /* padding-left: 20px; */
+        padding-left: 0;
     }
 
     select {
@@ -216,13 +221,13 @@ input[type="radio"]:hover::before {
     }
 
     .checkmark {
-        left: 10px;
+        left: 0px;
         height: 14px;
         width: 14px;
     }
 
     .wrap2 input {
-        left: 10px;
+        left: 0px;
         height: 14px;
         width: 14px;
     }
@@ -238,8 +243,9 @@ input[type="radio"]:hover::before {
 @media only screen and (min-width: 481px) {
 
     .wrap2 label {
-         padding-left: 20px; 
+        padding-left: 20px;
     }
+
     .sv-form,
     .df-form-section {
         display: flex;
