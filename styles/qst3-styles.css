@@ -34,6 +34,14 @@
         align-items: center;
         justify-content: space-between;
     }
+    .txt-wrp {
+        height:29.3vh;
+        position: relative;
+    }
+    #caracteresSobrando {
+        bottom: 0px;
+        font-size:16px;
+    }
 
 }
 
@@ -53,18 +61,22 @@
     .bg-txtarea {
         font-size: 14px
     }
+    .txt-wrp {
+        height:19.2vh;
+        position: relative;
+    }
+    #caracteresSobrando {
+        bottom: 10px;
+        font-size:12px;
+    }
 }
 
-.txt-wrp {
-    height:29.3vh;
-    position: relative;
-}
+
 
 #caracteresSobrando {
     position: absolute;
     right: 10px;
-    bottom: 0px;
     color: rgba(0,0,0,.60);
-    font-size:16px;
+  
     pointer-events: none;
 }
