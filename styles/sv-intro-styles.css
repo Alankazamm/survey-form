@@ -2,7 +2,9 @@
     #intro-body {
         display: flex;
         align-items: center;
+        justify-content:space-between;
         padding: 0;
+       
     }
 
     /* divs */
@@ -13,7 +15,7 @@
         width: 36.9vw;
         min-height: 500px;
         height: 37.4vh;
-
+        margin-right:6.8vw;
         padding-top: 11.5vh;
         display: flex;
         justify-content: flex-start;
@@ -50,8 +52,8 @@
     /* imgs */
     #img-wrp-1 {
         width: 43.125vw;
-        height: 63.1vh;
-        margin: 17vh 9.2vw 17.5vh 6.8vw;
+        height: 63.15vh;
+        margin: 17vh 0.7vw 17.5vh 6.8vw;
     }
 
 
