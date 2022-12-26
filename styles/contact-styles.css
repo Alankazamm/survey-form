@@ -14,6 +14,11 @@ input::-webkit-inner-spin-button {
 }
 
 @media only screen and (min-width: 481px) {
+    #contc-body{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+    }
     .contact-form-main {
         padding-top: 15vh;
         height:fit-content;
@@ -27,10 +32,9 @@ input::-webkit-inner-spin-button {
     }
 
     #img-wrp-5 {
-        width: 43.125vw;
-        height: 68.5vh;
-        margin: 13.8vh 7.2vw 134px 11vw;
-
+        width: 43.75vw;
+        height: 68.55vh;
+        margin: 13.75vh 5.8vw 17.6vh 6.6vw;
     }
 
 
@@ -99,7 +103,7 @@ input::-webkit-inner-spin-button {
 @media only screen and (max-width: 480px) {
     #img-hero-5 {
         width: 75%;
-        margin: 47px 40px 18px 65px;
+        margin: 8.7vh 76px 21px 44px;
     }
 
     .text-inputs-wrp {

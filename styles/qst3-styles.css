@@ -6,9 +6,10 @@
     }
 
     #img-wrp-4 {
-        width: 44vw;
-        height: 69.4vh;
-        margin: 13vh 5.8vw 17vh 6.8vw;
+        width: 43.75vw;
+        height: 68.55vh;
+        margin: 13.75vh 5.8vw 17.6vh 6.6vw;
+
 
     }
 
@@ -37,8 +38,8 @@
 
 @media only screen and (max-width: 480px) {
     #img-hero-4 {
-        width: 72%;
-        margin: 60px 50px 23px 70px;
+        width: 75%;
+        margin: 8.7vh 76px 21px 44px;
     }
 
 
