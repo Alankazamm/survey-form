@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/general-styles.css">
+    <link rel="stylesheet" type="text/css" href="./styles/sv-form-styles.css">
+    <link rel="stylesheet" type="text/css" href="./styles/qst1-styles.css">
+
+    <script src="./scripts/sv-quest1-app.js" defer></script>
+    <title>survey form</title>
+</head>
+
+<body id="qst1-body">
+    <div class="img-wrapper" id="img-wrp-2">
+        <img src="./images/two.svg" id="img-hero-2" alt="listener boy in formal wear" />
+    </div>
+    <main id="sv-form-main1"> 
+        <form action="survey-questions2.html" name="form1" class="sv-form">
+            <section class="df-form-section3">
+                <label for="sv-select-status" class="qst-label">What is the status of your account?</label>
+               
+                    <select id="sv-select-status" name="sv-select-status" onclick="selectClicked()">
+                        <option class="df-inpt-fsize" value="havnt">I have not created an account yet.</option>
+                        <option class="df-inpt-fsize" value="ok">My account status is okay!</option>
+                        <option class="df-inpt-fsize" value="bad">I'm currently having financial issues.</option>
+                    </select>
+               
+                <h3 class="qst-label">In which financial markets do you operate?</h3>          
+            </section>
+           <section class="df-form-section">
+              
+                <div class="mult-ipt-wrap">
+                    <div class="ipt-wrap"><input class="df-inpt-fsize" type="radio" id="sv-radius-stk" name="sv-radio-mrkt" value="stock">stock market</input></div>
+                    <div class="ipt-wrap"><input class="df-inpt-fsize" type="radio" id="sv-radius-fx" name="sv-radio-mrkt" value="fx">foreign exchange</input></div>
+                    <div class="ipt-wrap"><input class="df-inpt-fsize" type="radio" id="sv-radius-cmdt" name="sv-radio-mrkt"value="commodity">commodity</input></div>
+                    <div class="ipt-wrap"><input class="df-inpt-fsize" type="radio" id="sv-radius-bond" name="sv-radio-mrkt" value="bond">bond market</input></div>
+                    <div class="ipt-wrap"><input class="df-inpt-fsize" type="radio" id="sv-radius-crpt" name="sv-radio-mrkt"value="cryptos">cryptocurrency market</input></div>
+                </div>
+                
+           </section>
+           
+            <nav class="tri-btns-wrap">
+                <div class="btns-wrap-nav">
+                    <a class="btn btn-small" onclick="history.go(-1)">Back</a>
+                    <input type="submit" class="btn btn-small" onclick="return checaMarcado(document.querySelector(`select[name='sv-select-status']`),document.querySelectorAll(`input[name='sv-radio-mrkt']`))" value="Next"></input>
+                </div>
+                <input type="submit" class="btn btn-big" value="Skip"></input>
+            </nav>
+        </form>
+
+    </main>
+</body>
+
+</html>

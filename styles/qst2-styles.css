@@ -1,0 +1,41 @@
+@media only screen and (min-width: 481px) {
+    #qst2-body{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+    }
+    #img-hero-3 {
+        width: 100%;
+        height: 100%;
+    }
+    #img-wrp-3{
+        width: 43.75vw;
+        height: 69.4vh;
+        margin: 12.9vh 5.8vw 17.6vh 6.8vw;
+
+    }
+   #sv-form-main2{
+    width: 42vw;
+    height:67.6vh;
+    margin-left:2vw;
+   }
+
+}
+
+@media only screen and (max-width: 480px) {
+    /* #img-hero-3 {
+        width: 75%;
+        margin: 61px 76px 21px 44px;
+    } */
+    #img-hero-3 {
+        width: 75%;
+        margin: 8vh 76px 21px 44px;
+    }
+    #qst2-body {
+     
+        padding: 0;
+        margin:0;
+       
+    }
+
+}

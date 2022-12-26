@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/general-styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/contact-styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/sv-form-styles.css">
+    <script src="./scripts/app.js" defer></script>
+    <script src="./scripts/input-patterns-app.js" defer></script>
+    <title>survey form</title>
+</head>
+
+<body id="contc-body">
+
+    <div class="img-wrapper" id="img-wrp-5">
+        <img src="./images/five.svg" id="img-hero-5" alt=" boy with a happy expression in formal wear" />
+    </div>
+    <main class="contact-form-main">
+
+        <form name="form3" action="./tela7.html"  class="sv-form sv-contact-form">
+            <div class="text-inputs-wrp">
+                <label class="txt-ipt-label" for="fname">Full Name:</label>
+                <input type="text" class="ipts txt-inpts" id="fname" name="fname" placeholder="Nasser Toghiri">
+                <label class="txt-ipt-label" for="email">Email:</label>
+                <input type="email" class="ipts txt-inpts" id="email" name="email" placeholder="N.Toghiri@Gmail.com">
+                <label class="txt-ipt-label" for="age">Age:</label>
+                <input type="text" class="ipts nbr-inpt" id="age" name="age" placeholder="-- --">
+            </div>
+
+            <nav class="tri-btns-wrap" id="contact-frm-btns">
+                <a class="btn btn-big" onclick="history.go(-1)">Back</a>
+                <input type="submit"  onclick="return checaMarcado()" class="btn btn-big" value="Submit"></input>
+            </nav>
+        </form>
+
+    </main>
+</body>
+
+</html>

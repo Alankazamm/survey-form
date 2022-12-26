@@ -1,0 +1,162 @@
+::placeholder {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.ipts:hover,
+.ipts:active {
+    border-color: var(--input-border-active);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media only screen and (min-width: 481px) {
+    #contc-body{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+    }
+    .contact-form-main {
+        padding-top: 15vh;
+        height:fit-content;
+        width:41vw;
+    }
+
+    #img-hero-5 {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    #img-wrp-5 {
+        width: 43.75vw;
+        height: 68.55vh;
+        margin: 13.75vh 5.8vw 17.6vh 6.6vw;
+    }
+
+
+    .text-inputs-wrp {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .txt-ipt-label {
+        font-size: var(--desk-form-fsize);
+        font-weight: var(--main-font-weight);
+        margin-left: 10px;
+        margin-bottom: 4px;
+    }
+
+    .txt-ipt-label:first-child {
+        margin-bottom: 22px;
+
+    }
+
+    .txt-inpts {
+        width: 36vw;
+        margin-bottom: 24px;
+
+    }
+
+    .txt-inpts:first-child {
+        margin-bottom: 27px;
+
+    }
+
+    .nbr-inpt {
+        width: 12vw;
+        margin-bottom: 24px;
+    }
+
+    #age {
+        padding-left: 18px;
+        
+    }
+
+    .ipts {
+        height: 52px;
+        border-radius: var(--input-radius);
+        border: 1px solid var(--input-border-unselected);
+        padding-left: 17px;
+        line-height: 18.75px;
+        display: block;
+        padding-bottom: 5px;
+        font-size: 27px;
+    }
+
+    #contact-frm-btns {
+        display: flex;
+        justify-content: center;
+    }
+
+    #contact-frm-btns .btn:first-child {
+        margin-bottom: 3px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    #img-hero-5 {
+        width: 75%;
+        margin: 8.7vh 76px 21px 44px;
+    }
+
+    .text-inputs-wrp {
+        display: flex;
+        flex-direction: column;
+        min-width: 80vw;
+        margin-left: auto;
+        align-items: flex-start;
+
+    }
+
+    .txt-ipt-label {
+        font-size: var(--mb-form-fsize);
+        font-weight: var(--main-font-weight);
+        margin-left: 2vw;
+        margin-bottom: 4px;
+    }
+
+    .txt-ipt-label:first-child {
+        margin-bottom: 7px;
+
+    }
+
+    .txt-inpts {
+        width: 58vw;
+        margin-bottom: 10px;
+    }
+
+    .txt-inpts:first-child {
+        margin-bottom: 14px;
+    }
+
+    .nbr-inpt {
+        width: 23vw;
+        margin-bottom: 34px;
+    }
+
+    #age {
+        padding-left: 15px;
+    }
+
+    .ipts {
+        height: 33px;
+        border-radius: var(--input-radius);
+        border: 1px solid var(--input-border-unselected);
+        padding-left: 11px;
+        line-height: 18.75px;
+        display: block;
+        padding-bottom: 5px;
+
+
+    }
+
+
+}
