@@ -106,9 +106,10 @@ input[type="radio"]:hover::before {
     padding: 12px 20px;
 }
 
-.bg-txtarea:active, .bg-txtarea:hover{
+.bg-txtarea:active,
+.bg-txtarea:hover {
 
-    border-color:var(--input-border-selected) ;
+    border-color: var(--input-border-selected);
 }
 
 @media only screen and (max-width: 480px) {
@@ -116,7 +117,7 @@ input[type="radio"]:hover::before {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100vw;
+        width: 63.75vw;
         align-items: center;
     }
 
@@ -132,7 +133,8 @@ input[type="radio"]:hover::before {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        white-space:nowrap ;
         /* padding-left:20vw; */
 
     }
@@ -182,6 +184,7 @@ input[type="radio"]:hover::before {
     }
 
     .qst-label {
+        white-space: nowrap;
         margin-bottom: 3px;
 
     }
@@ -202,6 +205,7 @@ input[type="radio"]:hover::before {
         background-size: 14px 9px;
         background-position: left 10px center;
         padding: 5px 0px 5px 28px;
+        margin-bottom: 1.95vh;
     }
 
     select:hover,
@@ -288,7 +292,7 @@ input[type="radio"]:hover::before {
     .checkmarkHover {
         background-color: var(--btn-std-color);
     }
-  
+
 
     .checkmark {
         left: 6px;
