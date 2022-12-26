@@ -8,7 +8,7 @@ First challenge from 'PB AWS REACT'!
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Funcionalities](#funcionalities)
+
 
 ## General info
 This project is a survey-form based on the presented [figma's template](https://www.figma.com/file/5I2a5ibNzVl3B0IyLnvKp3/survey-form---desktop-type-(Community)-(Copy)?node-id=0%3A1&t=wLYEkX7x4PX3Koqg-0)
@@ -19,6 +19,4 @@ Project is created with:
 * CSS 
 * Javascript
 	
-## Funcionalities
-You can actually see this project hosted here in GitHub:
-https://alankazamm.github.io/survey-form/
+
