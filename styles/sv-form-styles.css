@@ -297,7 +297,7 @@ input[type="radio"]:hover::before {
         background-position: left 10px center;
     }
 
-    .checkmarkHover {
+    .wrap2 input:hover ~.checkmark {
         background-color: var(--btn-std-color);
     }
 
