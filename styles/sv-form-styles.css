@@ -63,7 +63,7 @@ input[type="radio"]:hover::before {
 }
 
 .wrap2 label {
-    padding-left: 20px;
+    /* padding-left: 20px; */
     cursor: pointer;
 }
 
@@ -140,15 +140,15 @@ input[type="radio"]:hover::before {
     }
 
     .df-form-section2 {
-        width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        width: 100vw;
         align-items: center;
-        margin-right: 5%;
     }
 
-    .df-form-section2>.qst-label {
-        margin-right: 10%;
+    .df-form-section2 .qst-label {
+      white-space: normal;
 
     }
 
@@ -237,7 +237,9 @@ input[type="radio"]:hover::before {
 
 @media only screen and (min-width: 481px) {
 
-
+    .wrap2 label {
+         padding-left: 20px; 
+    }
     .sv-form,
     .df-form-section {
         display: flex;
