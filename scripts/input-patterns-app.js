@@ -1,13 +1,21 @@
 let txtInptName = document.querySelector("#fname");
-txtInptName.pattern = '([a|A-z|Z])+\\s([a|A-z|Z])';
+let namePattern = '^[A-Za-z]+\\s[A-Za-z]';
 
 let txtInptEmail = document.querySelector("#email");
-txtInptEmail.pattern = "/^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\w+)*(\\.\\w{2,3})+$/";
+let emailPattern = "/^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\w+)*(\\.\\w{2,3})+$/";
 
+
+let nome = "";
+txtInptName.addEventListener('input', () => {
+    if (txtInptName.value.match(emailPattern)){
+        nome = txtInptName.value;
+    } else txtInptName.value = nome;
+    console.log(nome);
+} )
 
 function ValidarInputs(input1) {
     const mailPattern = "/^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\w+)*(\\.\\w{2,3})+$/";
-    if (input1.value.match(mailPattern)) {
+    if (input1.value.test(mailPattern)) {
         return true;
     }
     else {
@@ -18,3 +26,5 @@ function ValidarInputs(input1) {
         return false;
     }
 }
+
+

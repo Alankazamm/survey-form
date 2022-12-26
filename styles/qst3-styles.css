@@ -15,8 +15,8 @@
 
     #sv-form-main2 {
         width: 42vw;
-        height:67.6vh;
-        margin-left:1vw;
+        height: 67.6vh;
+        margin-left: 1vw;
     }
 
     .qst3-label {
@@ -25,12 +25,13 @@
     }
 
     .bg-txtarea {
-        font-size:18px
+        font-size: 18px
     }
-    #qst3-body{
-       
-        display:flex;
-        align-items:center;
+
+    #qst3-body {
+
+        display: flex;
+        align-items: center;
         justify-content: space-between;
     }
 
@@ -48,8 +49,22 @@
         font-size: var(--mb-form-fsize);
         margin-bottom: 10px;
     }
-    
-    .bg-txtarea{
-        font-size:14px
+
+    .bg-txtarea {
+        font-size: 14px
     }
+}
+
+.txt-wrp {
+    height:29.3vh;
+    position: relative;
+}
+
+#caracteresSobrando {
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    color: rgba(0,0,0,.60);
+    font-size:16px;
+    pointer-events: none;
 }
