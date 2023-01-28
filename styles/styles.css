@@ -126,13 +126,13 @@ body {
     .big-header {
         font-size: 53px;
         padding-left: 10px;
-        margin-bottom: 39px;
+        margin-bottom: 30px;
     }
 
     .big-paragraph {
         font-size: 24px;
         font-weight: 700;
-        margin-bottom: 39px;
+        margin-bottom: 30px;
     }
 }
 
