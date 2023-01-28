@@ -21,8 +21,16 @@ body {
     display: none;
 }
 
-.invest-section{
+.invest-section {
     display: none;
+}
+
+.details-section {
+    display: none;
+}
+
+.contact-section {
+    display: flex;
 }
 
 @media screen and (max-width: 768px) {
@@ -85,7 +93,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 500px;
+    max-width: 498px;
     justify-content: center;
 
 }
@@ -128,16 +136,21 @@ body {
 
 @media screen and (max-width: 768px) {
     .content-section {
-        max-width: 70vw;
+        max-width: 63.75vw;
     }
 
-    .status-section .content-section{
+    .status-section .content-section {
         margin-top: 20px;
     }
 
-    .invest-section .content-section{
+    .invest-section .content-section {
         margin-top: 16px;
     }
+
+    .details-section .content-section {
+        margin-top: 23px;
+    }
+
 
     .big-header {
         font-size: 53px;
@@ -220,7 +233,9 @@ body {
     background-color: var(--secondary-color);
     border: 1px solid var(--primary-color);
 }
-
+.contact-section .btn{
+    width: 91.1%;
+}
 .skip-button {
     width: 86%;
 }
@@ -234,6 +249,7 @@ body {
         width: 100%;
         justify-content: flex-start;
     }
+
     .start-section .buttons-wrapper {
         justify-content: center;
     }
@@ -254,6 +270,7 @@ body {
         width: 90%;
     }
 }
+
 .welcome-section .btn {
     width: 43.5%;
 }
@@ -264,6 +281,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+.contact-section .survey-form {
+    margin-bottom: 20px;
 }
 
 .mult {
@@ -280,6 +301,10 @@ body {
     font-size: var(--form-dsk-fsize);
     font-weight: var(--font-weight-bold);
     margin-bottom: 20px;
+}
+
+.contact-section .input-label {
+    margin-bottom: 25px;
 }
 
 .mult-label {
@@ -323,7 +348,7 @@ select {
 }
 
 select:focus {
-    border-color: #475242;
+    border-color: var(--grey-input-color);
 }
 
 select:focus+div {
@@ -357,16 +382,18 @@ select:focus+div {
         height: 33px;
         width: 279px;
         margin-bottom: 11px;
-        
+
     }
 
     select {
         font-size: var(--form-mb-fsize);
         padding-left: 28px;
     }
-    .invest-section select{
+
+    .invest-section select {
         margin-bottom: 10px;
     }
+
     .pointer {
         border-top: 9px solid var(--unselected-color);
         border-right: 7px solid transparent;
@@ -406,13 +433,13 @@ input[type="radio"]:checked {
     gap: 11px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     input[type="radio"] {
         width: 15px;
         height: 15px;
     }
- 
-    .input-wrapper {    
+
+    .input-wrapper {
         gap: 7px;
     }
 }
@@ -427,15 +454,89 @@ input[type="checkbox"] {
     border-radius: 5px;
     cursor: pointer;
 }
+
 input[type="checkbox"]:checked {
     appearance: none;
     background-color: var(--primary-color);
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     input[type="checkbox"] {
         width: 13.8px;
         height: 13.8px;
         border-radius: 2px;
     }
- 
+
+}
+
+/* textarea */
+textarea {
+    appearance: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    border: 1px solid var(--unselected-color);
+    width: 459px;
+    height: 225px;
+    border-radius: var(--input-border-radius);
+    padding: 0.5em;
+    font-size: var(--form-dsk-fsize);
+    font-family: var(--main-font-family);
+}
+
+textarea:focus {
+    border: 1px solid var(--grey-input-color);
+}
+
+.textarea-div {
+    margin-bottom: 62px;
+}
+
+@media screen and (max-width: 768px) {
+    textarea {
+        width: 278px;
+        height: 131px;
+        font-size: var(--form-mb-fsize);
+
+    }
+
+    .textarea-div {
+        margin-bottom: 23px;
+        margin-top: 10px;
+    }
+}
+
+/* text */
+#fullname,
+#email,
+#age {
+    height: 52px;
+    border-radius: var(--input-border-radius);
+    border: 1px solid var(--grey-input-color);
+    padding-left: 25px;
+    font-size: 27px;
+    font-family: var(--main-font-family);
+    margin-bottom: 24px;
+}
+
+#fullname::placeholder,
+#email::placeholder,
+#age::placeholder {
+    color: var(--grey-input-color);
+}
+
+#fullname:focus,
+#email:focus,
+#age:focus {
+    border: 1px solid #475242;
+}
+
+#fullname,
+#email {
+    width: 459px;
+}
+
+#age {
+    width: 152px;
 }
