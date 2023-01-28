@@ -4,23 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styles/general-styles.css">
-    <link rel="stylesheet" type="text/css" href="./styles/index-styles.css">
-    <script src="./scripts/tela1app.js" defer></script>
-    <title>survey form</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/resset.css">
+    <link rel="stylesheet" href="./styles/generalvars.css"> 
+    <script src="./scripts/index.js" defer></script>
+    <title>Survey Form</title>
 </head>
 
 <body>
-    <div class="img-wrapper" id="img-wrp-0">
-        <img src="./images/zero.svg" id='img-hero-0' alt="triumphant boy in formal wear">
-    </div>
-    <main id="hm-pg-main">
-        <h1 id="home-header">welcome</h1>
-        <h2>
-            Thanks for participating in the poll
-        </h2>   
-        <nav class="btns-wrap-nav"> <a id="btn-hm-pg" class="btn" href="survey-intro.html">Let's go</a></nav>       
+    <main class="survey-form">
+
+        <section class="page welcome-section">
+            <div class="img-section">
+                <img src="./images/zero.svg" id="img-zero" alt="" />
+            </div>
+            <div class="content-section">
+                <div class="text-section">
+                    <h1 class="big-header">
+                        welcome
+                    </h1>
+                    <p class="big-paragraph">
+                        Thanks for participating in the poll
+                    </p>
+                </div>
+                <div class="buttons-wrapper">
+                    <button class="btn skip-button">Let's go</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="start-section">
+            <div class="img-section">
+                <img src="./images/one.svg" alt="" />
+            </div>
+            <div class="content-section">
+                <div class="text-section">
+                    <h2 class="section-title">
+                        Necessities of working in financial markets
+                    </h2>
+                    <p class="text">This research is to find the reasons for the failure of people in financial markets. 
+                        The results of this survey will be emailed to you along with the analysis of our experienced experts.
+                    </p>
+                    <div class="buttons-wrapper">
+                      
+                    </div>
+                    
+            </div>
+        </section>
+
     </main>
+    
+
+
 </body>
 
 </html>
