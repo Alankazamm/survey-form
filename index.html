@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/resset.css">
-    <link rel="stylesheet" href="./styles/generalvars.css"> 
+    <link rel="stylesheet" href="./styles/generalvars.css">
     <script src="./scripts/index.js" defer></script>
     <title>Survey Form</title>
 </head>
@@ -42,19 +42,66 @@
                     <h2 class="section-title">
                         Necessities of working in financial markets
                     </h2>
-                    <p class="text">This research is to find the reasons for the failure of people in financial markets. 
-                        The results of this survey will be emailed to you along with the analysis of our experienced experts.
+                    <p class="text">This research is to find the reasons for the failure of people in financial markets.
+                        The results of this survey will be emailed to you along with the analysis of our experienced
+                        experts.
                     </p>
                     <div class="buttons-wrapper">
                         <button class="btn back-button">Back to Home</button>
                         <button class="btn skip-button">Fill out the form</button>
                     </div>
-                    
+                </div>
+        </section>
+
+        <section class="page status-section">
+            <div class="img-section">
+                <img src="./images/two.svg" alt="" />
+            </div>
+            <div class="content-section">
+                <form class="survey-form">
+                    <label class="input-label" for="status-select">What is the status of your account?</label>
+                    <div class="select-div">
+                        <select name="status-select" id="status-select">
+                            <option value="1">I have not created an account yet.</option>
+                            <option value="2">My account status is okay.</option>
+                            <option value="3">I'm currently having financial issues.</option>
+                        </select>
+                        <div class="pointer"></div>
+                    </div>
+
+                    <div class="mult">
+                        <p class="input-label">In which financial markets do you operate?</p>
+
+                        <div class="input-wrapper">
+                            <input type="radio" name="markets" id="stk" value="stk">
+                            <label for="stk" class="mult-label">stock market</label>
+                        </div>
+                        <div class="input-wrapper"><input type="radio" name="markets" id="fx" value="fx">
+                            <label for="fx" class="mult-label">foreign exchange</label>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="radio" name="markets" id="cmd" value="cmd">
+                            <label for="cmd" class="mult-label">commodity</label>
+                        </div>
+                        <div class="input-wrapper"><input type="radio" name="markets" id="bond" value="bond">
+                            <label for="bond" class="mult-label">bond market</label>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="radio" name="markets" id="cripto" value="cripto">
+                            <label for="cripto" class="mult-label">cryptocurrency market</label>
+                        </div>
+                    </div>
+                </form>
+                <div class="buttons-wrapper">
+                    <button class="btn back-button">Back</button>
+                    <button class="btn next-button">Next</button>
+                    <button class="btn skip-button">Skip</button>
+                </div>
             </div>
         </section>
 
     </main>
-    
+
 
 
 </body>
