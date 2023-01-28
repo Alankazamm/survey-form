@@ -18,6 +18,10 @@ body {
 }
 
 .status-section {
+    display: none;
+}
+
+.invest-section{
     display: flex;
 }
 
@@ -231,7 +235,6 @@ body {
         width: var(--btn-mb-width);
         padding: 4px 4px;
         height: max-content;
-
     }
 
     .start-section .btn {
@@ -241,15 +244,12 @@ body {
     .skip-button {
         width: 90%;
     }
-
 }
-
 .welcome-section .btn {
     width: 43.5%;
 }
 
 /* Form */
-
 .survey-form {
     display: flex;
     flex-direction: column;
@@ -278,8 +278,6 @@ body {
 @media screen and (max-width: 768px) {
     .survey-form {
         align-items: flex-start;
-        
-
     }
 
     .mult {
@@ -335,7 +333,7 @@ select:focus+div {
     border-top: 14px solid var(--unselected-color);
     border-right: 11px solid transparent;
     border-left: 11px solid transparent;
-    border-radius: 20%;
+    border-radius: 25%;
     border-bottom: none;
     position: absolute;
     top: 19px;
@@ -403,4 +401,27 @@ input[type="radio"]:checked {
     .input-wrapper {    
         gap: 7px;
     }
+}
+
+/* checkbox */
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background-color: var(--unselected-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked {
+    appearance: none;
+    background-color: var(--primary-color);
+}
+@media screen and (max-width: 768px){
+    input[type="checkbox"] {
+        width: 13.8px;
+        height: 13.8px;
+        border-radius: 2px;
+    }
+ 
 }
