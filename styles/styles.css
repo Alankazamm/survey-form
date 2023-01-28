@@ -145,17 +145,10 @@ body {
     text-align: center;
 }
 
-/* .text {
-    font-size: 28px;
-    text-align: center;
-    width: 34vw;
-} */
 .start-section .section-title {
     font-size: 39px;
     text-align: center;
     margin-bottom: 30px;
-
-
 }
 
 .start-section p {
@@ -192,9 +185,11 @@ body {
     align-items: center;
     justify-content: flex-start;
 }
-.welcome-section .buttons-wrapper{
+
+.welcome-section .buttons-wrapper {
     justify-content: center;
 }
+
 .btn {
     background-color: var(--primary-color);
     color: white;
@@ -212,16 +207,21 @@ body {
     background-color: var(--secondary-color);
     border: 1px solid var(--primary-color);
 }
-.skip-button{
+
+.skip-button {
     width: 86%;
 }
-.start-section .btn{
+
+.start-section .btn {
     width: 43.5%;
 }
 
 @media screen and (max-width: 768px) {
     .buttons-wrapper {
         width: 100%;
+        justify-content: flex-start;
+    }
+    .start-section .buttons-wrapper {
         justify-content: center;
     }
 
@@ -233,8 +233,13 @@ body {
         height: max-content;
 
     }
-    .start-section .btn{
+
+    .start-section .btn {
         width: var(--btn-mb-width);
+    }
+
+    .skip-button {
+        width: 90%;
     }
 
 }
@@ -258,14 +263,40 @@ body {
     align-items: flex-start;
     margin-bottom: 38px;
 }
+
 /* labels */
 .input-label {
     font-size: var(--form-dsk-fsize);
     font-weight: var(--font-weight-bold);
     margin-bottom: 20px;
 }
-.mult-label{
+
+.mult-label {
     font-size: var(--form-dsk-fsize);
+}
+
+@media screen and (max-width: 768px) {
+    .survey-form {
+        align-items: flex-start;
+        
+
+    }
+
+    .mult {
+        margin-bottom: 25px;
+        gap: 5px;
+    }
+
+    .input-label {
+        font-size: var(--form-mb-fsize);
+        margin-bottom: 3px;
+    }
+
+    .mult-label {
+        font-size: var(--form-mb-fsize);
+    }
+
+
 }
 
 /* select */
@@ -275,17 +306,20 @@ select {
     border-radius: var(--input-border-radius);
     border: 1px solid var(--grey-input-color);
     text-overflow: ellipsis;
-    padding-left: 40px; 
+    padding-left: 40px;
     width: 100%;
-    height:100%;
+    height: 100%;
     cursor: pointer;
 }
-select:focus{
+
+select:focus {
     border-color: #475242;
 }
-select:focus + div{
-    border-top:14px solid var(--primary-color);
+
+select:focus+div {
+    border-top: 14px solid var(--primary-color);
 }
+
 .select-div {
     height: 52px;
     width: 481px;
@@ -293,11 +327,12 @@ select:focus + div{
     position: relative;
     margin-bottom: 40px;
 }
-.pointer{
+
+.pointer {
     height: 0;
     width: 0;
     pointer-events: none;
-    border-top:14px solid var(--unselected-color);
+    border-top: 14px solid var(--unselected-color);
     border-right: 11px solid transparent;
     border-left: 11px solid transparent;
     border-radius: 20%;
@@ -307,24 +342,65 @@ select:focus + div{
     left: 13px;
 }
 
+@media screen and (max-width: 768px) {
+    .select-div {
+        height: 33px;
+        width: 279px;
+        margin-bottom: 11px;
+        
+    }
+
+    select {
+        font-size: var(--form-mb-fsize);
+        padding-left: 28px;
+    }
+
+    .pointer {
+        border-top: 9px solid var(--unselected-color);
+        border-right: 7px solid transparent;
+        border-left: 7px solid transparent;
+        border-bottom: none;
+        position: absolute;
+        top: 12px;
+        left: 10px;
+    }
+
+    select:focus+div {
+        border-top: 9px solid var(--primary-color);
+    }
+
+}
+
 /* radio */
-input[type="radio"]{
+input[type="radio"] {
     appearance: none;
-    width:25px;
+    width: 25px;
     height: 25px;
     background-color: var(--unselected-color);
     border-radius: 50%;
     cursor: pointer;
-   
+
 }
-input[type="radio"]:checked{
+
+input[type="radio"]:checked {
     appearance: none;
     background-color: var(--primary-color);
 }
 
-.input-wrapper{
+.input-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap:11px;
+    gap: 11px;
+}
+
+@media screen and (max-width: 768px){
+    input[type="radio"] {
+        width: 15px;
+        height: 15px;
+    }
+ 
+    .input-wrapper {    
+        gap: 7px;
+    }
 }
