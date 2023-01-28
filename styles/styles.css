@@ -10,7 +10,7 @@ body {
 }
 
 .welcome-section {
-    display: none;
+    display: flex;
 }
 
 .start-section {
@@ -30,7 +30,7 @@ body {
 }
 
 .contact-section {
-    display: flex;
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -149,6 +149,11 @@ body {
 
     .details-section .content-section {
         margin-top: 23px;
+        
+    }
+    .contact-section .content-section {
+        width: 330px;
+       align-items: flex-start;
     }
 
 
@@ -233,9 +238,11 @@ body {
     background-color: var(--secondary-color);
     border: 1px solid var(--primary-color);
 }
-.contact-section .btn{
+
+.contact-section .btn {
     width: 91.1%;
 }
+
 .skip-button {
     width: 86%;
 }
@@ -249,7 +256,7 @@ body {
         width: 100%;
         justify-content: flex-start;
     }
-
+    
     .start-section .buttons-wrapper {
         justify-content: center;
     }
@@ -260,6 +267,9 @@ body {
         width: var(--btn-mb-width);
         padding: 4px 4px;
         height: max-content;
+    }
+    .contact-section .btn {
+        width: 94%;
     }
 
     .start-section .btn {
@@ -315,7 +325,10 @@ body {
     .survey-form {
         align-items: flex-start;
     }
-
+    .contact-section .survey-form {
+        margin-top: 20px;
+        margin-bottom: 19px;
+    }
     .mult {
         margin-bottom: 25px;
         gap: 5px;
@@ -325,7 +338,10 @@ body {
         font-size: var(--form-mb-fsize);
         margin-bottom: 3px;
     }
-
+    .contact-section .input-label {
+        padding-left: 10px;
+        margin-bottom: 4px;
+    }
     .mult-label {
         font-size: var(--form-mb-fsize);
     }
@@ -445,7 +461,6 @@ input[type="radio"]:checked {
 }
 
 /* checkbox */
-
 input[type="checkbox"] {
     appearance: none;
     width: 24px;
@@ -539,4 +554,24 @@ textarea:focus {
 
 #age {
     width: 152px;
+}
+
+@media screen and (max-width: 768px) {
+
+    #fullname,
+    #email,
+    #age {
+        height: 33px;
+        padding-left: 12px;
+        font-size: var(--form-mb-fsize);
+        margin-bottom: 15px;
+    }
+
+    #fullname,
+    #email {
+        max-width: 278px;
+    }
+    #age {
+        max-width: 111px;
+    }
 }
