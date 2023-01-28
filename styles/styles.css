@@ -22,7 +22,7 @@ body {
 }
 
 .invest-section{
-    display: flex;
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -131,6 +131,14 @@ body {
         max-width: 70vw;
     }
 
+    .status-section .content-section{
+        margin-top: 20px;
+    }
+
+    .invest-section .content-section{
+        margin-top: 16px;
+    }
+
     .big-header {
         font-size: 53px;
         padding-left: 10px;
@@ -183,7 +191,8 @@ body {
 /* buttons */
 .buttons-wrapper {
     display: flex;
-    gap: 18px;
+    column-gap: 18px;
+    row-gap: 10px;
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
@@ -264,6 +273,8 @@ body {
     margin-bottom: 38px;
 }
 
+
+
 /* labels */
 .input-label {
     font-size: var(--form-dsk-fsize);
@@ -293,6 +304,7 @@ body {
     .mult-label {
         font-size: var(--form-mb-fsize);
     }
+
 
 
 }
@@ -352,7 +364,9 @@ select:focus+div {
         font-size: var(--form-mb-fsize);
         padding-left: 28px;
     }
-
+    .invest-section select{
+        margin-bottom: 10px;
+    }
     .pointer {
         border-top: 9px solid var(--unselected-color);
         border-right: 7px solid transparent;
