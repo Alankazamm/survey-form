@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+
+    /* fonts */
+    --main-font-family: 'Roboto', sans-serif;
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
+    --form-dsk-fsize: 26px;
+    --form-mb-fsize: 16px;
+
+
+    /* colors */
+    --primary-color: rgba(62, 178, 94, 1);
+    --secondary-color: white;
+    --unselected-color: rgba(62, 178, 94, 0.3);
+    --grey-input-color: rgba(0, 0, 0, 0.25);
+
+    /* buttons */
+    --btn-radius: 35px;
+    --btn-dsk-fsize: 22px;
+    --btn-mb-fsize: 16px;
+    --btn-std-width: 47%;
+    --btn-skip-width: 100%;
+    --btn-primary-color: var(--primary-color);
+    --btn-secondary-color: var(--secondary-color);
+    --btn-dsk-height: 36px;
+    --btn-mb-height: 26px;
+    --btn-contact-size: 100%;
+
+    /* inputs */
+    --input-border-radius: 20px;
+
+}
