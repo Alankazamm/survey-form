@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Alankazamm/survey-form/issues"
   },
-  "homepage": "https://github.com/Alankazamm/survey-form#readme"
+  "homepage": "https://github.com/Alankazamm/survey-form#readme",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
 }

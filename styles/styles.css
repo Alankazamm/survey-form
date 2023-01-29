@@ -83,10 +83,9 @@ body {
 
     .welcome-section img {
         min-width: 220px;
-        transform: translate(-7%, 0);
+        transform: translate(-9%, 0);
         max-width: 65.41%;
     }
-
 }
 
 .content-section {
@@ -273,7 +272,7 @@ body {
     }
 
     .start-section .btn {
-        width: var(--btn-mb-width);
+        width: 47%;
     }
 
     .skip-button {

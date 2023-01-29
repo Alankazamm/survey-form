@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/resset.css">
     <link rel="stylesheet" href="./styles/generalvars.css">
-    <script src="./scripts/index.js" defer></script>
+  
+    
     <title>Survey Form</title>
 </head>
 
@@ -94,7 +95,7 @@
                 </form>
                 <div class="buttons-wrapper">
                     <button class="btn back-button">Back</button>
-                    <button class="btn next-button">Next</button>
+                    <button class="btn" id="next-status">Next</button>
                     <button class="btn skip-button">Skip</button>
                 </div>
             </div>
@@ -139,7 +140,7 @@
                 </form>
                 <div class="buttons-wrapper">
                     <button class="btn back-button">Back</button>
-                    <button class="btn next-button">Next</button>
+                    <button class="btn" id="next-invest">Next</button>
                     <button class="btn skip-button">Skip</button>
                 </div>
             </div>
@@ -163,7 +164,7 @@
                 </form>
                 <div class="buttons-wrapper">
                     <button class="btn back-button">Back</button>
-                    <button class="btn next-button">Next</button>
+                    <button class="btn" id="next-details">Next</button>
                     <button class="btn skip-button">Skip</button>
                 </div>
             </div>
@@ -184,15 +185,17 @@
                 </form>
                 <div class="buttons-wrapper">
                     <button class="btn back-button">Back</button>
-                    <button class="btn next-button">Submit</button>
+                    <button class="btn" id="next-contact">Submit</button>
                 </div>
             </div>
         </section>
 
     </main>
 
-
-
+   
+    <script type="module" src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/navEvents.js" ></script>
+    <script type="module" src="./scripts/validators.js"></script>
 </body>
 
 </html>
