@@ -92,9 +92,9 @@ export const createForm = (infos: Infos) => {
     const domizedValues: string[] = filledForm.map((item):string => {
         if (!Array.isArray(item)) return `<p>${item}</p>`
         else
-            return  `<p>${item.map(nestedItem => {
-                return ` <br>${nestedItem}`;
-            })}</p>`;
+            return  `<div>${item.map(nestedItem => {
+                return `<br> ${nestedItem}`;
+            })}</div>`;
            
             
             // item.map(nestedItem => {

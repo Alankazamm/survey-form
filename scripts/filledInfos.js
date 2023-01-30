@@ -74,9 +74,9 @@ export const createForm = (infos) => {
         if (!Array.isArray(item))
             return `<p>${item}</p>`;
         else
-            return `<p>${item.map(nestedItem => {
-                return ` <br>${nestedItem}`;
-            })}</p>`;
+            return `<div>${item.map(nestedItem => {
+                return `<br> ${nestedItem}`;
+            })}</div>`;
         // item.map(nestedItem => {
         //     infoItem.innerHTML = nestedItem;
         //     infosUl.appendChild(infoItem);

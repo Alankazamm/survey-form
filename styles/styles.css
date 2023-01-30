@@ -365,7 +365,7 @@ select {
 }
 
 select:focus {
-    border-color: var(--grey-input-color);
+    border-color: #475242;
 }
 
 select:focus+div {
@@ -590,6 +590,17 @@ textarea:focus {
     color: var(--secondary-color);
     
     justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
+    .infosDiv{
+        width: 80vw;
+        min-height: 30vh;
+        max-height: 40vh;
+        overflow: scroll;
+        padding: 4%;
+        justify-content: space-between;
+    }
 }
 .sucess-section button{
     width: 40%;
