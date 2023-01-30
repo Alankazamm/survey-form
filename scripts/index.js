@@ -4,13 +4,14 @@ const pages = [
     document.querySelector('.status-section'),
     document.querySelector('.invest-section'),
     document.querySelector('.details-section'),
-    document.querySelector('.contact-section')
+    document.querySelector('.contact-section'),
+    document.querySelector('.sucess-section')
 ];
-const [welcome, start, statuspage, invest, details, contact] = pages;
+const [welcome, start, statuspage, invest, details, contact, sucess] = pages;
 const navigate = (page) => {
     switch (page) {
         case 'welcome':
-            contact.style.display = 'none';
+            sucess.style.display = 'none';
             welcome.style.display = 'flex';
             start.style.display = 'none';
             break;
@@ -37,6 +38,10 @@ const navigate = (page) => {
         case 'contact':
             details.style.display = 'none';
             contact.style.display = 'flex';
+            break;
+        case 'sucess':
+            contact.style.display = 'none';
+            sucess.style.display = 'flex';
             break;
     }
 };

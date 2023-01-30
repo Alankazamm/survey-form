@@ -2,9 +2,10 @@
 // const infosUl = document.createElement('ul');
 // const infoItem = document.createElement('li');
 const itemDivs = document.querySelectorAll('.infoItem');
-const filledForm = [];
+let filledForm = [];
 export const createForm = (infos) => {
     var _a;
+    filledForm = [];
     filledForm.push(infos.name);
     filledForm.push(infos.email);
     filledForm.push(infos.age);
@@ -67,15 +68,15 @@ export const createForm = (infos) => {
                 break;
         }
     });
-    filledForm.push(arrCheckeds);
-    filledForm.push(infos.details); //arrumar isso, fazer um switch pra saida de string vazia
+    arrCheckeds.length > 0 ? filledForm.push(arrCheckeds) : filledForm.push('not answered');
+    infos.details.length > 0 ? filledForm.push(infos.details) : filledForm.push('Not filled');
     const domizedValues = filledForm.map((item) => {
         if (!Array.isArray(item))
-            return `<li>${item}</li>`;
+            return `<p>${item}</p>`;
         else
-            return `<ul>${item.map(nestedItem => {
-                return `<li>${nestedItem}</li>`;
-            })}</ul>`;
+            return `<p>${item.map(nestedItem => {
+                return ` <br>${nestedItem}`;
+            })}</p>`;
         // item.map(nestedItem => {
         //     infoItem.innerHTML = nestedItem;
         //     infosUl.appendChild(infoItem);

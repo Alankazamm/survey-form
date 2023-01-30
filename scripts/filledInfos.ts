@@ -1,3 +1,5 @@
+import navigate from "./index";
+
 export interface Infos {
     name: string;
     email: string;
@@ -14,9 +16,10 @@ export interface Infos {
 // const infoItem = document.createElement('li');
 const itemDivs:NodeListOf<HTMLElement> = document.querySelectorAll('.infoItem');
 
-const filledForm: Array<string | string[]> = [];
+let filledForm: Array<string | string[]> = [];
 
 export const createForm = (infos: Infos) => {
+    filledForm = [];
     filledForm.push(infos.name);
     filledForm.push(infos.email);
     filledForm.push(infos.age);
@@ -82,17 +85,16 @@ export const createForm = (infos: Infos) => {
         }
     });
 
-    filledForm.push(arrCheckeds);
-    filledForm.push(infos.details!); //arrumar isso, fazer um switch pra saida de string vazia
-
+    arrCheckeds.length >0? filledForm.push(arrCheckeds):filledForm.push('not answered');
+    infos.details!.length > 0 ? filledForm.push(infos.details!) : filledForm.push('Not filled');
 
     
     const domizedValues: string[] = filledForm.map((item):string => {
-        if (!Array.isArray(item)) return `<li>${item}</li>`
+        if (!Array.isArray(item)) return `<p>${item}</p>`
         else
-            return  `<ul>${item.map(nestedItem => {
-                return `<li>${nestedItem}</li>`;
-            })}</ul>`;
+            return  `<p>${item.map(nestedItem => {
+                return ` <br>${nestedItem}`;
+            })}</p>`;
            
             
             // item.map(nestedItem => {
@@ -106,7 +108,8 @@ export const createForm = (infos: Infos) => {
         domizedValues.forEach((value, i) => {
             if (i === index) {
                 div.innerHTML = value;
-          }  
+            }
         })
-    })
+    });
+    
 }

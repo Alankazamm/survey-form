@@ -47,6 +47,7 @@ const formHandler = () => {
         details: detailsTxtArea?.value || '',
     }
     createForm(infos);
+    navigate('sucess');
 }
 export const validateHandler = (buttonId: string) => {
     switch (buttonId) {

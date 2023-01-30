@@ -11,12 +11,12 @@ const nextButtons = [
     document.querySelector('#next-contact'),
 ]
 
-nextButtons.forEach((button, index) =>
+nextButtons.forEach((button) =>
     button!.addEventListener('click', () => validateHandler(button!.id)))
 
 
 
-const pages = ['welcome', 'start', 'status', 'invest', 'details', 'contact'];
+const pages = ['welcome', 'start', 'status', 'invest', 'details', 'contact', 'sucess'];
 
 backButtons.forEach((button,index) => {
     button.addEventListener('click', () => {
@@ -26,7 +26,9 @@ backButtons.forEach((button,index) => {
 
 skipButtons.forEach((button, index) => {
     button.addEventListener('click', () => {
-        navigate(pages[index + 1]);
+        index + 1 < pages.length -1 ?
+            navigate(pages[index + 1]) :
+            navigate('welcome');
     });
 });
 

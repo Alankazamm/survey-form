@@ -37,6 +37,7 @@ const formHandler = () => {
         details: (detailsTxtArea === null || detailsTxtArea === void 0 ? void 0 : detailsTxtArea.value) || '',
     };
     createForm(infos);
+    navigate('sucess');
 };
 export const validateHandler = (buttonId) => {
     var _a, _b;
