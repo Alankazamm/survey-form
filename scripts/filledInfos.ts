@@ -102,8 +102,7 @@ export const createForm = (infos: Infos) => {
             //     infosUl.appendChild(infoItem);
             // })
     });
-    // fazer um forEach no itemDiv pra colocar cara domized dentro do respectivo
-    // que tera o titulo em tag estática + item convertido em li
+    
     itemDivs.forEach((div, index) => {
         domizedValues.forEach((value, i) => {
             if (i === index) {
