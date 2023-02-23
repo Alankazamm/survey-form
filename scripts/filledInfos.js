@@ -1,7 +1,7 @@
 // dom manipulation:
 // const infosUl = document.createElement('ul');
 // const infoItem = document.createElement('li');
-// const itemDivs = document.querySelectorAll('.infoItem');
+ const itemDivs = document.querySelectorAll('.infoItem');
 export let filledForm = [];
 export const createForm = (infos) => {
     var _a;
