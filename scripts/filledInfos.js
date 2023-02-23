@@ -1,8 +1,8 @@
 // dom manipulation:
 // const infosUl = document.createElement('ul');
 // const infoItem = document.createElement('li');
-const itemDivs = document.querySelectorAll('.infoItem');
-let filledForm = [];
+ const itemDivs = document.querySelectorAll('.infoItem');
+export let filledForm = [];
 export const createForm = (infos) => {
     var _a;
     filledForm = [];
@@ -84,11 +84,11 @@ export const createForm = (infos) => {
     });
     // fazer um forEach no itemDiv pra colocar cara domized dentro do respectivo
     // que tera o titulo em tag estática + item convertido em li
-    itemDivs.forEach((div, index) => {
-        domizedValues.forEach((value, i) => {
+     itemDivs.forEach((div, index) => {
+         domizedValues.forEach((value, i) => {
             if (i === index) {
                 div.innerHTML = value;
-            }
-        });
-    });
+             }
+         });
+     });
 };

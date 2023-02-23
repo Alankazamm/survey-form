@@ -274,11 +274,11 @@ body {
     }
 
     .start-section .btn {
-        width: 47%;
+        width: 80vw;
     }
 
     .skip-button {
-        width: 90%;
+        width: 95%;
     }
 }
 
@@ -566,8 +566,9 @@ textarea:focus {
         padding-left: 12px;
         font-size: var(--form-mb-fsize);
         margin-bottom: 15px;
+        max-width: 378px;
+        width: 70vw;
     }
-
     #fullname,
     #email {
         max-width: 278px;
@@ -586,6 +587,7 @@ textarea:focus {
     border-radius: var(--input-border-radius);
     display: flex;
     flex-direction: column;
+    
     padding: 4%;
     color: var(--secondary-color);
     
@@ -624,8 +626,17 @@ textarea:focus {
 .info{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px;
+}
+.info:nth-of-type(odd){
+    margin-top: 10px;
+   color: var(--primary-color);
+   background-color: var(--secondary-color);
+   border-radius: 6px;
+   padding-left: 10px;
+    padding-right: 10px;
 }
 .sucess-section p{
     word-break: break-all;
