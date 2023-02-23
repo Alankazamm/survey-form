@@ -586,6 +586,7 @@ textarea:focus {
     border-radius: var(--input-border-radius);
     display: flex;
     flex-direction: column;
+    
     padding: 4%;
     color: var(--secondary-color);
     
@@ -624,8 +625,17 @@ textarea:focus {
 .info{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px;
+}
+.info:nth-of-type(odd){
+    margin-top: 10px;
+   color: var(--primary-color);
+   background-color: var(--secondary-color);
+   border-radius: 6px;
+   padding-left: 10px;
+    padding-right: 10px;
 }
 .sucess-section p{
     word-break: break-all;
