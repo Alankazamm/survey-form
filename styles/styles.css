@@ -566,8 +566,9 @@ textarea:focus {
         padding-left: 12px;
         font-size: var(--form-mb-fsize);
         margin-bottom: 15px;
+        max-width: 378px;
+        width: 70vw;
     }
-
     #fullname,
     #email {
         max-width: 278px;
